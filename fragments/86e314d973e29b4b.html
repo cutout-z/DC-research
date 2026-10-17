@@ -1,0 +1,421 @@
+<input type="hidden" name="sort" value="url" form="t-cic_attention-form">
+<input type="hidden" name="direction" value="asc" form="t-cic_attention-form"><div class="scroll-cue" data-scroll-cue>
+<div class="max-h-[640px] overflow-auto" data-scroll-x tabindex="0" role="region" aria-label="What needs attention, scrollable"><table class="w-full min-w-[960px] table-fixed border-collapse dt-stack dt-stack-labels">
+  <colgroup><col class="w-[11%]"><col class="w-[10%]"><col class="w-[20%]"><col class="w-[14%]"><col class="w-[14%]"><col class="w-[9%]"><col class="w-[22%]"><col class="w-[6%]"></colgroup>
+  <thead><tr>
+    
+    
+    
+    <th class="th     pl-5 "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "verdict", "direction": "asc", "page": "1"}'>
+        Verdict<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "entity", "direction": "asc", "page": "1"}'>
+        Company<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "input", "direction": "asc", "page": "1"}'>
+        Input<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-right"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "model", "direction": "asc", "page": "1"}'>
+        In the model<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-right"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "latest", "direction": "asc", "page": "1"}'>
+        Newest public<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "since", "direction": "asc", "page": "1"}'>
+        Since<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "note", "direction": "asc", "page": "1"}'>
+        Note<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      pr-5"
+        aria-sort="ascending">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink text-ink text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "url", "direction": "desc", "page": "1"}'>
+        Link<span class="w-2 text-[10px] ">↑</span>
+      </button>
+    </th>
+    
+  </tr></thead>
+
+  
+
+  
+  <tbody>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   text-ink">Google Cloud</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">Headlines since the latest input</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">latest input 2026-07-23</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">4 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">4 headline(s) since 2026-07-23: unverified leads, never used as figures</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxNVFh1NVdLcm4yODA0aEV1VlUzazN1QVh3Qml5emZqcTFlcEdzZlJuelB6aFdoYWVIQ1VlZWFqMVhiT3V1ci13WHZZTWpnSWM1a1Q0ZWd1eU9IemlwN3RTNm13dlNMNVZQUUNhV1JNNUdfWTZkOUdiNnpHTU8wZ3BZX2VQdnloeFVmUG10bTlHRk9neDV0WVd3emZpYjloUW5hOW9NeWw5SVJYVE5aQ2ZSLU1xMFBMVTN3YmhtV2MtSFJxRV9YMnJocXdiV090VzRYZEVn?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   text-ink">CoreWeave</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">Headlines since the latest input</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">latest input 2026-08-12</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">2 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">2 headline(s) since 2026-08-12: unverified leads, never used as figures</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxQUDROQllXazRBOC01NFBrQzg2WnFldXNjOFNpWmc4bHE0MkFETHY2d1gtaFA5bzRJSUl1RnVzVkxtRXZOU1IwZk5zVFlWaHdXT001NUNMWXNRWGdndXdfNTFNS2lUdnAtdWtqQkJYQXU3dTFZTEVpZGktTEJJdXFxa3Y5RG5YV0tUYk5wa2RzbkFIZnVQaTh2Q0ZXT3FzblcwNG1jM1JmVS1UQVF3MkpyUHlzWGZSamRLZGtOczVlcUNCLWVBcUVoUDNRemo3cWY5LXNR?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   text-ink">AWS</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">Headlines since the latest input</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">latest input 2026-07-31</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">1 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">1 headline(s) since 2026-07-31: unverified leads, never used as figures</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1VWlZIbExmMHg2OW9nYTBxc1RTRU9MWXdxQ09xdWxVTUE4UHVJRk5KNUp4UnJ6MlBjc1hPRmJjV2s0LWM4OHBJQmdDWmNOUFdBNF9UVG1OVHVLVndFTlY4WXJCQmU0WFdDcHl1bHpfeGY?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   text-ink">Nebius</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">Headlines since the latest input</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">latest input 2026-08-12</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">2 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">2 headline(s) since 2026-08-12: unverified leads, never used as figures</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQY1hWRFQ2NmNTNE5yMGh6Nl9IdktsMkpMcjhQWFl6aVZDZEJqaUdlQXFjMkt2bWVHeDVqWGROS2pIb1pZVzc5SVFuQWVWTVZEUHBmc1FSQzVmYmlKN3F4WmY0R2dSV1h0OXV4NXNzemF0WkMtY0l0TFJ6TVBES3B6bEdKMmNEWkFjZEU1Y0hrM0JBNk0?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   text-ink">SpaceX AI</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">Headlines since the latest input</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">latest input 2026-08-04</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">2 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">2 headline(s) since 2026-08-04: unverified leads, never used as figures</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxPTDhXTDM3UDU5ZHdldU5KSnRpeTNJSEtFdHdvZW9YbElFOTU3Z2c3VzBoYm9NZl8xalMxUF81R09nTFp2ZnZUY1VOZFNtOURXeHRZR0d6cHdJUEs0ZC16M2FuUDR4RjU3b0x3UFI3YnBENUFnc2dvSXRsUmZKNWt1ampQdVlHNjd2TkQzajVVcmpWb0ZMM0FCSjlfMG9rcXFhemc?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">Headlines since the latest input</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">latest input 2026-07-30</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">5 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">5 headline(s) since 2026-07-30: unverified leads, never used as figures</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPLTRBYlNmX2VrMlk4eDF2UmVqdXBRNW5jOHlQYWZLUGFCblJMNGhybm92M29tb1dRNC1COVlXdW1qa2hXeHE2THpsN0lhcGlLcnYtNHFTcFN1aldjYVZsYS1id3Z4LVVSaUM5YXAwVXdjMWY1ei1lZi1ucS1rY3Q4LXNnV3FFUi1GdVhwbkxRVWZ4Z3luT0FzeUF3RWRjZFk3UTZrZXFGT0p5UkJS?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   text-ink">OpenAI</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">OpenAI revenue (annualised run-rate stated by the company)</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">$24.0bn (stated 2026-03-31)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">8 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">news since this figure mentions the company&#39;s revenue: check for a newer company statement</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPaElkWEJFUFBITjRRZXBRTDZaOWRoLU9weWg1Q2xuSHl5QUQyQU1vaTNZT0NXSjR5bTVrM0FtNUVSdkQ0MU1QbWtNb1VLUDg5cWNpN0pacTZ6TTRTV0YtXzJhdFptNEZBa0hCM0dXYjg0UjNBczUzMHJXOS1SZUNtWVJaZWhSMWdjSEhoUVNQV21XUHRXMkRTY3RwNlMyc0FWdjlqZXJPS3JnOUN6YzA4?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   text-ink">Microsoft</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">Headlines since the latest input</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">latest input 2026-07-29</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">3 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">3 headline(s) since 2026-07-29: unverified leads, never used as figures</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxQc0FDUXFSRE9RdUpUMG1mck5JUjdMdVVFc3lEcldabHN3LVA4UThacVJ0XzdDVXU3X093SXRVM2NQczU2Vk5Wamo0NEIyUjJJZ29tVmdmUHE3TW5vUUNBZ1JQR0RfOGlIUU5TZ0VTdjdIM1VQTTBJT0hLZmFxMmlWOFZORVMtdkYtWnM3cGVzSHhDSkNUTmUzQzFYZTBvblY3bEZNVjNtTUdsSXozUmk2RjJaMkhqSG9UaXJ3cGM5UjZkR2c?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   text-ink">Anthropic</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">Anthropic revenue (annualised run-rate stated by the company)</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">$47.0bn (stated 2026-05-28)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">8 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">news since this figure mentions the company&#39;s revenue: check for a newer company statement</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   text-ink">Nebius</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">Latest filed period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">Q2 2026 (filed 2026-08-12)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">6-K filed 2026-10-01</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">6 6-K report(s) since the model&#39;s latest filing; one may carry results</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 text-ink"><a href="https://www.sec.gov/Archives/edgar/data/1513845/000110465926112824/tm2626792d1_6k.htm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   text-ink">Alphabet</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">Construction in progress: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">$50.6bn (FY2024)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   num text-right text-ink">$55.6bn (at 2025-03-31)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   leading-relaxed text-muted">a later period is filed: at 2025-03-31 $55.6bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001652044-25-000043%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    
+  </tbody>
+  
+</table>
+</div>
+</div>
+
+<div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-2.5 text-[12px] text-faint">
+  <span class="num">11 inputs<span data-scroll-hint hidden> · <span class="text-muted">scroll sideways for more columns →</span></span></span>
+  
+  <span>Sorted by link, A→Z</span>
+  
+</div>
