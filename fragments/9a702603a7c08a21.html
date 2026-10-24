@@ -1,0 +1,123 @@
+<dialog class="drawer drawer-wide" aria-labelledby="note-title-4"
+        onclose="this.remove()" onclick="if (event.target === this) this.close()">
+  <div class="flex h-full max-h-[inherit] flex-col">
+    <header class="flex items-center justify-between gap-3 border-b border-line px-6 py-3">
+      <div class="flex min-w-0 items-center gap-2 text-[12px]">
+        <span class="whitespace-nowrap font-mono text-muted">2026-10-21</span>
+        <span class="badge hidden sm:inline-flex">AI &amp; DC Dashboard</span>
+      </div>
+      <div class="flex shrink-0 items-center gap-1">
+        <a href="https://x.com/mardehaym/status/2102737522946175042?s=12" target="_blank" rel="noopener noreferrer nofollow" class="btn h-7 text-[12px]">Open original<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a>
+        <button class="btn btn-ghost btn-icon -mr-2" aria-label="Close note" onclick="this.closest('dialog').close()" autofocus><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/>
+</svg></button>
+      </div>
+    </header>
+
+    <div class="min-h-0 flex-1 overflow-y-auto px-6 py-6">
+      <div class="mb-2 font-mono text-[12px] text-faint">@mardehaym</div>
+      <h3 id="note-title-4" class="max-w-[60ch] text-[18px] font-semibold leading-snug text-ink">Every company is building AI agents right now [agents, automation, claude-code, llm, prompt-engineering]</h3>
+
+      
+      <div class="note-body prose mt-6 max-w-none text-[14px]"><h1>Every company is building AI agents right now.</h1>
+<p>Every company is building AI agents right now.</p>
+<p>Almost none of them are building the harness around them.</p>
+<p>10 things a harness does that a model never will:</p>
+<p>(Save this before your next vendor demo.)</p>
+<p>1/ Someone writes down what "correct" means before anyone writes a prompt.</p>
+<ul>
+<li>We start with twenty to sixty real cases and the answer the business already agrees on, checked by hand</li>
+<li>The person who writes them is whoever knows what wrong looks like, usually a senior analyst, never us</li>
+<li>From then on every change gets scored against that set, so "does it work" turns into a number you can argue about</li>
+</ul>
+<p>2/ It reads from a copy of the data and leaves the real system alone.</p>
+<ul>
+<li>Read-only access to the reporting database</li>
+<li>A number that's a day old is fine for almost everything, and it can't take production down</li>
+<li>Before any prompt we write a data dictionary, and the column descriptions people already have are usually enough to start</li>
+<li>Trusted context is most of the job. Our lead architect's rule is that documentation is 80% of success, and a better model won't rescue bad context.</li>
+</ul>
+<p>3/ It removes names and IDs before the model sees anything.</p>
+<ul>
+<li>Patient, customer and employee identifiers get masked at the data layer</li>
+<li>If the masking lives in a system prompt, nobody can audit it</li>
+<li>It checks who's asking before it answers, and different user groups see different columns.</li>
+<li>Once it's done properly, a lab changing its training policy next year stops mattering, because there's nothing in the prompt worth training on</li>
+</ul>
+<p>4/ It makes every answer fit a fixed shape.</p>
+<ul>
+<li>Each output has a schema it has to match</li>
+<li>If it doesn't match, it fails and stops, so a CFO never gets a paragraph of confident prose where a number should be</li>
+<li>KPIs come from fixed calculations behind the agent, every answer shows its source, and if confidence is low it stops and says so.</li>
+</ul>
+<p>5/ It checks every answer automatically.</p>
+<ul>
+<li>A judge scores each run against the golden set</li>
+<li>So when a model update lands on a Tuesday, Friday's number doesn't silently change</li>
+<li>When the score drops, you can see which change caused it</li>
+<li>Every correction a person makes becomes a new test case, so the golden set and the agent both get sharper from real use.</li>
+</ul>
+<p>6/ It keeps a person in charge of anything that writes.</p>
+<ul>
+<li>The agent suggests and a named person approves</li>
+<li>It only gets reversible actions until it's earned more</li>
+<li>One client's PR review agent comments on every diff and has no power to block a merge. Every time an engineer dismissed a comment, we logged the pattern so it wouldn't come back, and the noise dropped week after week</li>
+<li>It has a hard cap on how many times it can retry before handing back to a person, and that limit is a setting, not code.</li>
+</ul>
+<p>7/ It puts a ceiling on spend.</p>
+<ul>
+<li>On that same agent it's $1 to $3 a review, with a hard cap of $20 a day per seat, and all of it is visible on a dashboard</li>
+<li>The company that reportedly spent $500 million in a month had no caps anywhere</li>
+<li>If you can't see token spend per workflow, you'll find out about it from finance when it's too late</li>
+</ul>
+<p>8/ It keeps the model swappable.</p>
+<ul>
+<li>The model sits behind an interface, so changing provider takes an afternoon, and it's the part most likely to be replaced next year</li>
+<li>Change the prompt, the tool definitions or the model long before you consider fine-tuning anything</li>
+<li>Everything runs in the client's own environment, never in a vendor sandbox</li>
+<li>The cloud provider gives you hosting, identity and networking. The harness around your specific workflow is what you have to build yourself, and it's the part competitors can't copy</li>
+</ul>
+<p>9/ It records every run.</p>
+<ul>
+<li>When something comes out wrong, you open the trace, find the step that went sideways, and fix the harness so it doesn't happen again</li>
+<li>We setup telemetry on every engagement</li>
+<li>Work starts from an event, like a ticket changing status or a file landing, instead of someone opening a chat window.</li>
+</ul>
+<p>10/ It has an owner inside the company.</p>
+<ul>
+<li>One named person who can change it after we leave, with a runbook</li>
+<li>The documentation lives in the repository, because the agent reads it and so will the next engineer</li>
+<li>If nobody is alerted when it breaks, you have a shiny demo</li>
+</ul>
+<p>People talk about the model because it's the exciting part.</p>
+<p>What makes an AI agent actually usable is everything listed above.</p>
+<p>Book a discovery call to ship AI-native:
+https://meetings-na2.hubspot.com/mark-ajzenstadt</p>
+<p>90% of AI content is written by people who've never shipped a production agent.</p>
+<p>This newsletter is written from inside 100+ engineering teams that do it every week.</p>
+<p>Subscribe for free 👇
+https://thefoundation.limestonedigital.com/</p>
+<p>An AI agent without a harness is just a raw language model acting as a "brain in a jar," capable of reasoning and generating text, but entirely disconnected from the real world, tools, and safety controls.</p></div>
+      
+
+      <dl class="mt-6 grid grid-cols-[88px_1fr] gap-x-4 gap-y-3 border-t border-line-soft pt-4 text-[13px]">
+        
+        <dt class="text-faint">Themes</dt>
+        <dd class="flex flex-wrap gap-1.5"><span class="badge">Supply chain</span><span class="badge">Commodities / energy</span></dd>
+        
+        <dt class="text-faint">Entities</dt>
+        <dd class="flex flex-wrap gap-1.5">
+          <span class="text-faint">None tagged</span>
+        </dd>
+      </dl>
+    </div>
+
+    <footer class="flex items-start gap-2 border-t border-line bg-surface-2 px-6 py-3 text-[12px] text-muted">
+      <svg class="mt-px size-3.5 shrink-0 text-faint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>
+</svg>
+      
+      <span>The note as clipped from @mardehaym on <span class="num">2026-10-21</span>; its frontmatter is not shown. <a href="https://x.com/mardehaym/status/2102737522946175042?s=12" target="_blank" rel="noopener noreferrer nofollow" class="text-ink underline decoration-line-strong underline-offset-2">Read the original post</a>.</span>
+      
+    </footer>
+  </div>
+</dialog>

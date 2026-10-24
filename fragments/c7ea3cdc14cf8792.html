@@ -1,0 +1,725 @@
+<input type="hidden" name="sort" value="note" form="t-cic_changes-form">
+<input type="hidden" name="direction" value="desc" form="t-cic_changes-form"><div class="scroll-cue" data-scroll-cue>
+<div class="max-h-[640px] overflow-auto" data-scroll-x tabindex="0" role="region" aria-label="What changed, scrollable"><table class="w-full  border-collapse dt-stack ">
+  
+  <thead><tr>
+    
+    
+    
+    <th class="th left-0 z-[12]    pl-5 "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_changes" hx-include="#t-cic_changes-form" hx-target="#t-cic_changes"
+              hx-vals='{"sort": "date", "direction": "asc", "page": "1"}'>
+        Checked<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_changes" hx-include="#t-cic_changes-form" hx-target="#t-cic_changes"
+              hx-vals='{"sort": "entity", "direction": "asc", "page": "1"}'>
+        Company<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_changes" hx-include="#t-cic_changes-form" hx-target="#t-cic_changes"
+              hx-vals='{"sort": "input", "direction": "asc", "page": "1"}'>
+        Input<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_changes" hx-include="#t-cic_changes-form" hx-target="#t-cic_changes"
+              hx-vals='{"sort": "from", "direction": "asc", "page": "1"}'>
+        From<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_changes" hx-include="#t-cic_changes-form" hx-target="#t-cic_changes"
+              hx-vals='{"sort": "to", "direction": "asc", "page": "1"}'>
+        To<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="descending">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink text-ink text-left"
+              hx-get="/partials/t/cic_changes" hx-include="#t-cic_changes-form" hx-target="#t-cic_changes"
+              hx-vals='{"sort": "note", "direction": "asc", "page": "1"}'>
+        Note<span class="w-2 text-[10px] ">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      pr-5"
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_changes" hx-include="#t-cic_changes-form" hx-target="#t-cic_changes"
+              hx-vals='{"sort": "url", "direction": "asc", "page": "1"}'>
+        Link<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+  </tr></thead>
+
+  
+
+  
+  <tbody>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Google Cloud</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Consensus EBITDA, FY2026 (company level)</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">within 3% of the model&#39;s snapshot</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" data-empty class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Google Cloud</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Consensus revenue, FY2027 (company level)</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">within 3% of the model&#39;s snapshot</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" data-empty class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Google Cloud</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Consensus EBITDA, FY2027 (company level)</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">within 3% of the model&#39;s snapshot</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" data-empty class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Microsoft</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Consensus revenue, FY2027 (company level)</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">within 3% of the model&#39;s snapshot</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" data-empty class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Microsoft</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Consensus EBITDA, FY2027 (company level)</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">within 3% of the model&#39;s snapshot</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" data-empty class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Microsoft</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Consensus revenue, FY2028 (company level)</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">within 3% of the model&#39;s snapshot</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" data-empty class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Microsoft</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Consensus EBITDA, FY2028 (company level)</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">within 3% of the model&#39;s snapshot</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" data-empty class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Consensus revenue, FY2026 (company level)</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">within 3% of the model&#39;s snapshot</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" data-empty class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Consensus EBITDA, FY2026 (company level)</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">within 3% of the model&#39;s snapshot</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" data-empty class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Consensus revenue, FY2027 (company level)</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">within 3% of the model&#39;s snapshot</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" data-empty class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Consensus EBITDA, FY2027 (company level)</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">within 3% of the model&#39;s snapshot</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" data-empty class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Capex guidance, CY2026</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Still matches</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">To read</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">results on 2026-10-21 came after this guidance and the guidance file has not been updated since</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/Meta-06-30-2026-Exhibit-99-1-FINAL.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Accumulated depreciation: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: at 2026-09-30 $73.3bn</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066773%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Gross property and equipment: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: at 2026-09-30 $326.5bn</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066773%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Accumulated depreciation: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: at 2026-09-30 $20.5bn</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Gross property and equipment: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: at 2026-09-30 $110.0bn</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Purchases of property and equipment: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: 2026-01-01 to 2026-09-30 $83.1bn</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066773%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Depreciation and amortisation: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: 2026-01-01 to 2026-09-30 $8.4bn</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Operating income: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: 2026-01-01 to 2026-09-30 $705m</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Operating income: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: 2026-01-01 to 2026-09-30 $54.6bn</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066773%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Purchases of property and equipment: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: 2026-01-01 to 2026-09-30 $48.1bn</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Operating lease cost: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: 2026-01-01 to 2026-09-30 $362m</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Revenue: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: 2026-01-01 to 2026-09-30 $27.1bn</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Finance-lease amortisation: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: 2026-01-01 to 2026-09-30 $237m</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Checked" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">Finance-lease interest: latest period</div></td>
+    
+    
+    <td data-label="From" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">No new data</td>
+    
+    
+    <td data-label="To" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Superseded</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted"><div class="dt-long w-[400px]">a later period is filed: 2026-01-01 to 2026-09-30 $190m</div></td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 whitespace-nowrap text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    
+  </tbody>
+  
+</table>
+</div>
+</div>
+
+<div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-2.5 text-[12px] text-faint">
+  <span class="num">57 changes · page 2 of 3<span data-scroll-hint hidden> · <span class="text-muted">scroll sideways for more columns →</span></span></span>
+  
+  <div class="flex items-center gap-1">
+    <button type="button" class="btn btn-icon h-7 w-7 disabled:opacity-40" aria-label="Previous page" 
+            hx-get="/partials/t/cic_changes" hx-include="#t-cic_changes-form" hx-target="#t-cic_changes" hx-vals='{"page": "1"}'>
+      <span class="rotate-180"><svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/>
+</svg></span></button>
+    <button type="button" class="btn btn-icon h-7 w-7 disabled:opacity-40" aria-label="Next page" 
+            hx-get="/partials/t/cic_changes" hx-include="#t-cic_changes-form" hx-target="#t-cic_changes" hx-vals='{"page": "3"}'>
+      <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/>
+</svg></button>
+  </div>
+  
+</div>

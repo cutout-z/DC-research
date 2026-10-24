@@ -1,0 +1,823 @@
+<input type="hidden" name="sort" value="seen" form="t-news_feed-form">
+<input type="hidden" name="direction" value="asc" form="t-news_feed-form"><div class="scroll-cue" data-scroll-cue>
+<div class="max-h-[640px] overflow-auto" data-scroll-x tabindex="0" role="region" aria-label="Catalogued articles, scrollable"><table class="w-full min-w-[640px] table-fixed border-collapse dt-stack dt-stack-labels">
+  <colgroup><col class="w-[11%]"><col class="w-[40%]"><col class="w-[13%]"><col class="w-[12%]"><col class="w-[7%]"><col class="w-[6%]"><col class="w-[5%]"><col class="w-[6%]"></colgroup>
+  <thead><tr>
+    
+    
+    
+    <th class="th     pl-5 "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "published", "direction": "asc", "page": "1"}'>
+        Published<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "title", "direction": "asc", "page": "1"}'>
+        Title<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "source", "direction": "asc", "page": "1"}'>
+        Source<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "bucket", "direction": "asc", "page": "1"}'>
+        Bucket<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "tier", "direction": "asc", "page": "1"}'>
+        Tier<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-right"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "score", "direction": "asc", "page": "1"}'>
+        Score<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  "
+        aria-sort="ascending">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink text-ink text-right"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "seen", "direction": "desc", "page": "1"}'>
+        Seen<span class="w-2 text-[10px] ">↑</span>
+      </button><span class="ml-0.5 inline-flex align-middle"><span class="tip" tabindex="0" role="note" aria-label="Times the catalogue lane observed this article."><svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>
+</svg><span class="tip-body" aria-hidden="true">Times the catalogue lane observed this article.</span></span></span>
+    </th>
+    
+    
+    
+    <th class="th      pr-5"
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "url", "direction": "asc", "page": "1"}'>
+        Link<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+  </tr></thead>
+
+  
+
+  
+  <tbody>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Meta details Ohio Prometheus data center campus, with first phase live - Data Center Dynamics</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Data Center Dynamics</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Hyperscaler CAPEX</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.822</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxOSnlud1VueXpmR19XNzhDZXFrdWhoV3lET2Jod0F4VzlGZjB6dVFrSU9Nbk9vdEJyNmxGWUt4U0hDSUpQSzVxZjJHR2R6b0NEcDNxakUtMFVpM0NxV3NEb0V1RVhqTFhlV2pGRk12cUlhNzJVeG1YMFZ3TXV3RXVtdHFnSEd6eWVhbmxkZ0pjTFViSkdkRjU1RC1uVHZkWTNrNUMtWHFfak5mTmhwRmFSdDh1QQ?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Oregon city declares state of emergency over lost data center revenue amid state-wide ban</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">DatacenterDynamics</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Supply Chain</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.821</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.datacenterdynamics.com/en/news/oregon-city-declares-state-of-emergency-over-lost-data-center-revenue-amid-state-wide-ban/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-22</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Google signs 1GW virtual power plant deal with Voltus - Data Center Dynamics</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Data Center Dynamics</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Hyperscaler CAPEX</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.922</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQbUl6cWpmTEdXMGxpOHN5UG5BWjZ3RWxhaUlZVFY5VlZhUXEwRGdlUFRsTU9iT0dSc0tzdjM2OXU5eUs0SzZ3WTN0anRRNmNKQ3ktbVhtazVYQzVMY0l4eG1YZ2pQZEduRTNSYnlReGtvdUczY1k2TW9PS084ZFNUX1h3emNZZURCdHRiNTZFbGZGVEVPYTNiQ1AybkJRQQ?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-22</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Nextdc Claws Back Losses after Profit Warning Prompts Plunge - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.603</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPUzFQNW5GUWpqSG5TT01DcDF0eU5qMXhaRHQ4eEF4ak5VQk1CRXdSeUVuWUNqM2d1c1hxQWtKbGpFcmZCM2VpSl9FUzBWc2M4ZmQwOUw5TVRKMVpvaklybFJaT2J6UHNuN2RacktfTFZkaTMyajJfV3c4MGZZV19SY0d6ZklFOHVQRlN5b1NDQ2tmX204eG1hczg5d3ZvSlpTVlR3TmZLbmtfWkRHdl9kUQ?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-21</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">These are the people and power poles that wiped $3b off NextDC - AFR</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">AFR</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.540</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxNb0JxbERSaFFmdFEzUmNIZ0dIRV9CeGxGRGVaazh0ZktHNFhrcmx3THRlQi04NmZjSVpnRzBENG9SQlZ2WkJ3aG5jbGtwdFZXd1lMNGoxMnRReUdoVk5DTEd3cDY0bGdaaUNWcUtMS1VQUTNyX245SUJKTXFhd1BFOU13WG1LVkN5UHlWYW1XQ2VPOXhJTE9sSjM5VGhxVkdpeDZaQzdB?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-21</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Australian data center operator NextDC shares fall 40% after power backlash - Nikkei Asia</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Nikkei Asia</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.618</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQY2dPNUFGRHppc3B6bllweHp0SmZ0ajFQLVhuUlJEZzY1RGxTUXd4VnpIQ2g5QTRtaFFLN3RSd0w4eS1XeE1YaEF1clNNQVhFR3E3NHM4ZEtJWDJKSnUtWG8xYjc1WTZ4RTlabWJhVU9PSUhNbWhYTXlCdTBiX0JZUWwtZmZ3OEpSRFc4cm0tX3dDclpmajZKSmVqWGQzd1haWW05ejZFVjYwV2R6cG4zY3o5YWlyZ2RQdGc?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-21</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Nextdc Shares Plunge 44% After Public Backlash Hits Data Center - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.618</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOc2cycW1CNXNjRGR3blYyX0w5SWpPYURMTUFCQ1l6M1lJRUlPcHB6NHM3MncxQy1wYXBkeW12eC1lTmJHMXhPNWJUeXNTcFR3cEZLMmlCamtNcEZCbHpLbVN2aXJNM0lDWmZKemsyX0p3N05hMXBVdVFiOEhrQl82ZVBMRWFmanZqUHJabnQzUWJFYnI3Sl9QVGprLVNSVDFxNFlkb0dSX1JBMVZrY2NwMVM2ams?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-21</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">$3b gone in 40 minutes: Inside the NextDC bloodbath - AFR</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">AFR</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.538</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPemhaQ2dVY21JS3c1VXFpQU93VHI3VkdaajkzdXdpS2YyM2RTVGx4eTNYM2RvMFpvSmJma1BHOGVBUWFrbUc2WmhNYXROT00xVk0zVTdFTmZnb010X2tXRUJXa1ZpSzVTOUhOZnB1TFdIdC1KZWRVaEdLa0NobmNxRjFFZ3F5LTZlZjVaTHROdU95TTBVZmdFWmtsemdaRTRVUk5LY3Nib19nOXBCekQ0UjRudEkxVUN1?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-21</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">NextDC share Armageddon as Melbourne data centre suspended - The Australian</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">The Australian</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.616</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMikAJBVV95cUxOX1lTNFJPa1JCVjVtUHB0d3J5MEU5ZmtLaEp6RUJ3LWVkSkJOSlJlQV9teDIzR2dyVTY3YlNESnJpQVlKWUNHNWRYVTkydWtuSGtEbjI2SDNKS2NaM05VajJ0Z29XcWlyQUhBRENIbW9mQzRkT3lVSVpRSU9NUVkxZktmNml4b3o3UFlZTW1YeVROVVY4TGF5QXBaQVcxMHJpcGxFbm04T21ad1pOSjJkcHVJRlUtYi1ydzlmeDFadC1yZXBCRUMxZWk5S0tKTDIzRXpqOTdtajJ2eE9RUUQzNTUweTR2alR4QXZZREdFM3kyQTl6MGJDNkNiaTVGRW0yM2tYTXQzRmJJdVMtNF9rcA?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-21</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">NextDC slashes earnings forecast, triggering 42pc share plunge - AFR</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">AFR</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.615</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxQY3J2WnU5R3NhMkVWOXdjU0pEZ215R3dMUVh5RFNLamZfd01BU1Q2cHl1LVI1YkFEclBlSFdLanZ1VGFtaGgxbFZmWnlkYmVPU3NrLWdTMjltaVdfeUFrYURaT3RTbVY0eGVhUGNuSFBvME1Gb0lyUi0zZUJMU0owWGtnLUh6VkFsWkxZSXdoYnhGZXgtWkNqQmd2LXdFRUwtcGdMLTlSY0JWZHdaV1pvRGNzYWp2UGpHVnREU1lYSQ?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-21</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Australian data center operator NextDC&#39;s shares plunge 40% after it slashes earnings forecast - CNBC</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">CNBC</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.614</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPeENma3Vob2QwdkN4eHp0anZQNHRjTGVxU2VpNXkzc3FzaS1kV3V2NjRXUXFLZnlINWI2Ukhhd3VGRWVlZ0g0VExVMFprN1pOOHA3OWFNM2NrZ25CSG1GNEsydDFhRlQ0Uk15aWxkTENlY2t6VzNmOEJQV3JWZlJWbkkwbFJQSVFWQXFGdtIBkgFBVV95cUxNR1YxZm1WRXQ2Z1gzNDNFMDhPTUxRdF83M0RkSkRVUlZvVTZIdUQ4dXZfV29hS05SZVpLaW1aOVFMcnpQbXo5OEZ3WHE3aXZjM3NWRDZTNlM2elIxdHBjZ3haMDY3RGZjQ3pQZENxdnVYaWdXR2tmRjVHRi02cTM4VlRSenhUMXRNQVp6bkxUbF84Zw?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-21</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Australian AI data centre operator NextDC shares shed 42% on revenue delay, future plans on hold - Reuters</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Reuters</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.614</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxONWJyOF9XbWhodGFsMWVRYUhMYzlCUDRMR2ZqRDdTdTFsOTJZWVdTcS1sRTg1UldzbkMyN1JTMkFmWkpJT0s0NkVnOWgyeXNlRnMwOVlXX3RueEt4SkJ6OTU2em5yZzBpS3o5Q3paWUk1WjJLNXhrUjQ4bGhUb2xjSHYzOTV4N3lreHREMkFBa0F3bVpJdE9VMHg4d0d4ZWJJbVFEX2xZM0xyOU9PMWItaXItTUVSWWlid003RExodnIxUFE?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-20</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">NextDC slashes earnings forecast triggering 40pc share price plunge - AFR</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">AFR</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.647</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNeDVWcjlQajVhMnZORVQtcVlYRHZIclZlZXM1UGtBSHhQQ2xfMzBMejNqaXVrMHI3MU5PaFJpN0IxRWVVU3QyNmZfSWE0aHVZT2lmTHVXZTlJLXF2Y0I4dkdvVVdYT1dGb0h0SE1FWS00eXlPTlRPTVlOTXdGREtVNmRhUXozeUMxVVBQUUxoWWU3dWpOcTc2bmFwdm5wNURMWW9xbXBOWXR5WmpLSHMzTzRTMU1rVGotSzdxcWd6QWk?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ARK’s Wood Says CoreWeave Will Overcome Debt Fears on AI Demand - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.844</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPYUJuY2N3QTRUX3ZRYUs1QzNvcENnWEJUQ00tVmtsN2JRUXNCNkEzbUpGYUlWSjhRWVp2R2JLeU8yOVdWNEN4MXBqV0ZxdFBtc3NKUTFhUlRkX1dHeWIwUkN1MmJ2LVEtN3lVZ01GSDdWRXB6RUtZX2FUX0duU1p0em00VVlRU3lyTHUzUEpxQnJsTXpwbUt2VGkyc1hPenVibnc1aDA4UkJnY04tMWx2ZWNqMl8?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">EXCLUSIVE: Investors temper Anthropic IPO valuation expectations over revenue growth slowdown, sources say - Reuters</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Reuters</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.865</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-06</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Black Hills plans $1.8 billion investment to power Google&#39;s data center - Reuters</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Reuters</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Hyperscaler CAPEX</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.948</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOQkl1VUxHdjl1Q2g0c0xiXy12bG8tYWVPMC1mV1RpQ1RnTzcteWgwVGRBcmdpMG5iSE4yYllhZkFWVWdYVWdUM0FLVFVtV0phVEZlbHVWVE9KQ1pRV3FtbW94Tmw4bHRKalV4TDNfaG8zcUF2WTc1WlI1TWUxSU5DVnFYYVBkaml0b1doaHVuOFVUTXU0M0w5UEV1eU9BNTNSSzVaSmk0TUhpR29HSnZ3bnVIYXhoVWFv?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-06</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Google signs 3.6GW deal with Constellation to secure power in PJM service area - Data Center Dynamics</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Data Center Dynamics</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Hyperscaler CAPEX</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.911</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxPbDNlRlpPRUdHNWF4RWFHaFFtSDhCcEQwZ00tdTlkLXZBVTVidXRwMGNSdmNEVV93OUhpN0pMSTBIYUh3eWxjNGNKM3VzLURXSksyZ2FsRTNXZ2ZCdW1BVWtYY2tuRjFxV3FSbHAtdUE1cmlWMVdidm5QSGNxczFjbzNPQVRjUVNPbXc4akZIUHpiUmNWMjJrWG9qamRfUmppTldQZnpaaFZZcFFwX2VabkFjZW5YZVlheWc3Ql9B?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-30</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">FTC Opens Investigation of Anthropic and OpenAI - WSJ</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">WSJ</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.854</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPLWNQa1A4UWxGdzZ4V1V5bzVpWTV5bVdWQnBFYkZpMHN4ZW14UGY1MlU2LWpNdUc4UHBnUUVUbXdhVWRjemQ4SEVUR2hPemVGZ0tQdVpwZ0dmWXVRNkRnTFYwSmNPSWJJZFZnZnFQekVGTzlOdExxcTJhazhocUVXZVBjWmpHZ1hUVWpjNg?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-30</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">US competition watchdog expands investigation of Anthropic and OpenAI - Financial Times</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Financial Times</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.853</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPTmZUMXl2aTVwYjVtWUhybXMyZGFMOHJ6aExDRTNJM2FvaTVLcW8tY0V0TGYwYU5NNERzUG1DX2RCNXF1M0JRTzhCNkh4Ukp4WEVRRk9vckFsd1UxY3cybUQwNjJmSWgtZ0pyNkdXeXdUY0hHYjNnS3JDeTRsSWx3enJpc0M?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-30</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">FTC Probing OpenAI and Anthropic Over Product Safety Concerns - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.850</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQNWthUTUtdzAtb1NKYkQ4TDdxSGV4ZC1NV2QxTnE5a2VzaldWRWowU3VDUUxWV3lIajZzRnNYLTJUV3RCaTFxUU11MEhKSFF4UmFMNTBqV1g0bmljbWE3bXJJc0tNOE5XX3hZQjRlUS1sMFlaS0FDWHZ2WmdQU05zSV9uSFpYNlF0SmVHeEVTTnVkdzdNZHZZbGJaemhGQUoxT0gxVm1kbnJ1dTlhZm8zeFJR?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-30</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">FTC is investigating OpenAI, Anthropic and other AI companies over product risks - cnbc.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">cnbc.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.850</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFBaX3E1SXJOeEJHVWxxNEpSUDZxRmRJZFBTQ3hDU1R2Z3FLT0hOREVTZEQ4eXNQdmRKNkQwMExCXzA0blJRRE5kb3oxb2haU1h0eGFyQ3NrOGxJSjFNYzBIVU1DU1Z1SEhkWExyelZIeHh5amE40gF6QVVfeXFMUEI1a0NEa0xqMTNScWtrWXZjS3ppbE5xVHQyWXJjVWJMQUZDby1HNlE2bG1DNUtFOFgzdDlDXy00QW1VSHJ1RDFaZ1lnUE50b2VSdjI1YlJ6LTdMUktDaWtTdm9JUG5PbDF1dFVXOUNQSFhndHpmWjlMLVE?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-30</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Amazon signs PPA with Statkraft for windfarm in Shetland, Scotland - Data Center Dynamics</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Data Center Dynamics</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Hyperscaler CAPEX</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.815</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQU0NyNk8xcHdhOUs4WDhhcVcyYlhGTFVWaFpsUi1iRHZQUU10YjlLU2Z1VWlCZnR3WWlGNW5aZURmUXFWUHNCUDFEYm15UGN5MmM0eV9wUE81ZlR1cmFRV245Q0pqeVhSNDRNanJINWsyZWpLSG5UOWgzVFlqcGxxdm45LV9SRWN6SHE0US1nZlM4aDF2MWM2ek5XR3I0Q3dteXpxSnBkdWs2UW5BX3c?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-07-31</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">DeepSeek releases beta version of V4 models as AI price war heats up - Nikkei Asia</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Nikkei Asia</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Model Releases</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.841</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxOV3o4YXZVWEZta2NwZUlsbXd0QW13UkJhSzluUUFyT2E5VkU0OThQZ2xjakpzV25KYTdPQVVKQ2RSZW5uSE13VUFaUThlUHJkckJySnBiTWJHdTk1NER2cFJoaWN5bWNBdlRSdDU1UmcwVzBFcG9obUZ0RG11NUJKX19oYXBMem02anZ1aGFmZC1HaFJRMnQ4eXJmRlpOVXlfMl9BUHI3ZmJSaDlIVk1adnZrVEcwR1R3VHhaUS1scE00UjZod1lGNzRXcnE0b2xJUmc?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-07-21</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">NextDC shares jump as pro forma contract utilisation hits 740MW - Capital Brief</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Capital Brief</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.890</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxPSEZMMjBmQzlabG9ZUjM4cTYyS2VYTGxUZ0p0ZmVPVTVKb24wel9CNFRyXzNWdW1sUURhQ3VkbnVRT2Q3MFFwYUY2RVhTZVp3dzZmdXdUZDlLU2w2Qy1FaVdSUDZ2SEp0U1AyUVkya2JXRkF5aENxUWdlQzJGOUxVb09xUFlzX3RLYTd2Ml9SS0F4S29lQ3ZJOG9Ib2IxeXVaeXhCZThfYkNIdVlhNVlhUmpBMjgwZ2l0RnVxQnp0OW4?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-07-08</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">CDC Data Centres New Zealand swings to $88m loss, clocks $38m tax benefit - NZ Herald</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">NZ Herald</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.500</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMi2gFBVV95cUxOT1N4RFg1cnpNRmtfaDRyakhGbVBHSV9jRWJIVjJma09QV1B2RUlPVWRGdDRubUtGaEN2RS1PbVQybmhBY2YtZG9nSjFmY3JJSnFmakI4SW5zV0ljck82UmJTUE5ia01OeGp0UVNoa0xjYThRZllhNW90MHFIRURtQy1WdjVnNG5NU1BPbE5SQkxMR2pTbUhfd2VCXy1Zb3ZILU1HdzAxb2tia1ZVYm9YN3lQTE5aQ25EcHdoTXpObnE0Y0hSMmdCekF2QkVkYS03OVFxT1lQVjNDdw?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    
+  </tbody>
+  
+</table>
+</div>
+</div>
+
+<div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-2.5 text-[12px] text-faint">
+  <span class="num">711 articles · page 27 of 29<span data-scroll-hint hidden> · <span class="text-muted">scroll sideways for more columns →</span></span></span>
+  
+  <div class="flex items-center gap-1">
+    <button type="button" class="btn btn-icon h-7 w-7 disabled:opacity-40" aria-label="Previous page" 
+            hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed" hx-vals='{"page": "26"}'>
+      <span class="rotate-180"><svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/>
+</svg></span></button>
+    <button type="button" class="btn btn-icon h-7 w-7 disabled:opacity-40" aria-label="Next page" 
+            hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed" hx-vals='{"page": "28"}'>
+      <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/>
+</svg></button>
+  </div>
+  
+</div>

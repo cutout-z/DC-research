@@ -1,0 +1,366 @@
+<input type="hidden" name="sort" value="rows" form="t-sh_processed-form">
+<input type="hidden" name="direction" value="desc" form="t-sh_processed-form"><div class="scroll-cue" data-scroll-cue>
+<div class="max-h-[640px] overflow-auto" data-scroll-x tabindex="0" role="region" aria-label="Processed data (data/processed/, data/), scrollable"><table class="w-full  border-collapse dt-stack dt-stack-labels">
+  
+  <thead><tr>
+    
+    
+    
+    <th class="th left-0 z-[12]    pl-5 "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/sh_processed" hx-include="#t-sh_processed-form" hx-target="#t-sh_processed"
+              hx-vals='{"sort": "source", "direction": "asc", "page": "1"}'>
+        Source<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/sh_processed" hx-include="#t-sh_processed-form" hx-target="#t-sh_processed"
+              hx-vals='{"sort": "status", "direction": "asc", "page": "1"}'>
+        Status<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/sh_processed" hx-include="#t-sh_processed-form" hx-target="#t-sh_processed"
+              hx-vals='{"sort": "latest", "direction": "asc", "page": "1"}'>
+        Newest data<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/sh_processed" hx-include="#t-sh_processed-form" hx-target="#t-sh_processed"
+              hx-vals='{"sort": "age", "direction": "asc", "page": "1"}'>
+        Age<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/sh_processed" hx-include="#t-sh_processed-form" hx-target="#t-sh_processed"
+              hx-vals='{"sort": "threshold", "direction": "asc", "page": "1"}'>
+        Fresh if<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  "
+        aria-sort="descending">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink text-ink text-right"
+              hx-get="/partials/t/sh_processed" hx-include="#t-sh_processed-form" hx-target="#t-sh_processed"
+              hx-vals='{"sort": "rows", "direction": "asc", "page": "1"}'>
+        Rows<span class="w-2 text-[10px] ">↓</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      pr-5"
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/sh_processed" hx-include="#t-sh_processed-form" hx-target="#t-sh_processed"
+              hx-vals='{"sort": "detail", "direction": "asc", "page": "1"}'>
+        Note<span class="w-2 text-[10px] opacity-0">↓</span>
+      </button>
+    </th>
+    
+  </tr></thead>
+
+  
+
+  
+  <tbody>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Source" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">data/processed/capex_model_inputs.json</td>
+    
+    
+    <td data-label="Status" data-kind="status" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap text-ink"><span class="pill pill-good"><span class="badge-dot"></span>fresh</span></td>
+    
+    
+    <td data-label="Newest data" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">2026-10-14</td>
+    
+    
+    <td data-label="Age" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">10 d</td>
+    
+    
+    <td data-label="Fresh if" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">≤ 150 d</td>
+    
+    
+    <td data-label="Rows" data-kind="num" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap num text-right text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Note" data-kind="text" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Source" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">data/processed/capex_model_checks.json</td>
+    
+    
+    <td data-label="Status" data-kind="status" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap text-ink"><span class="pill pill-good"><span class="badge-dot"></span>fresh</span></td>
+    
+    
+    <td data-label="Newest data" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Age" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">1 d</td>
+    
+    
+    <td data-label="Fresh if" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">≤ 10 d</td>
+    
+    
+    <td data-label="Rows" data-kind="num" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap num text-right text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Note" data-kind="text" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Source" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">data/processed/market_caps.vintage.json</td>
+    
+    
+    <td data-label="Status" data-kind="status" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap text-ink"><span class="pill pill-good"><span class="badge-dot"></span>fresh</span></td>
+    
+    
+    <td data-label="Newest data" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Age" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">1 d</td>
+    
+    
+    <td data-label="Fresh if" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">≤ 10 d</td>
+    
+    
+    <td data-label="Rows" data-kind="num" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap num text-right text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Note" data-kind="text" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Source" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">data/stale_guidance.json</td>
+    
+    
+    <td data-label="Status" data-kind="status" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap text-ink"><span class="pill pill-good"><span class="badge-dot"></span>fresh</span></td>
+    
+    
+    <td data-label="Newest data" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Age" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">1 d</td>
+    
+    
+    <td data-label="Fresh if" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">≤ 10 d</td>
+    
+    
+    <td data-label="Rows" data-kind="num" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap num text-right text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Note" data-kind="text" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Source" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">data/fetcher_log.json</td>
+    
+    
+    <td data-label="Status" data-kind="status" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap text-ink"><span class="pill pill-neutral"><span class="badge-dot"></span>unaged</span></td>
+    
+    
+    <td data-label="Newest data" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Age" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">—</td>
+    
+    
+    <td data-label="Fresh if" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Rows" data-kind="num" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap num text-right text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Note" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 whitespace-nowrap text-ink">no scheduled writer or no date of its own; not aged</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Source" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">data/investment_radar_public.json</td>
+    
+    
+    <td data-label="Status" data-kind="status" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap text-ink"><span class="pill pill-neutral"><span class="badge-dot"></span>unaged</span></td>
+    
+    
+    <td data-label="Newest data" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Age" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">—</td>
+    
+    
+    <td data-label="Fresh if" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Rows" data-kind="num" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap num text-right text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Note" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 whitespace-nowrap text-ink">no scheduled writer or no date of its own; not aged</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Source" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">data/processed/etf_universe.json</td>
+    
+    
+    <td data-label="Status" data-kind="status" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap text-ink"><span class="pill pill-neutral"><span class="badge-dot"></span>unaged</span></td>
+    
+    
+    <td data-label="Newest data" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Age" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">—</td>
+    
+    
+    <td data-label="Fresh if" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Rows" data-kind="num" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap num text-right text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Note" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 whitespace-nowrap text-ink">no scheduled writer or no date of its own; not aged</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Source" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">data/processed/mapping_5.csv</td>
+    
+    
+    <td data-label="Status" data-kind="status" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap text-ink"><span class="pill pill-neutral"><span class="badge-dot"></span>unaged</span></td>
+    
+    
+    <td data-label="Newest data" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Age" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">—</td>
+    
+    
+    <td data-label="Fresh if" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Rows" data-kind="num" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap num text-right text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Note" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 whitespace-nowrap text-ink">no scheduled writer or no date of its own; not aged</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Source" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">data/processed/value_chain_taxonomy.csv</td>
+    
+    
+    <td data-label="Status" data-kind="status" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap text-ink"><span class="pill pill-neutral"><span class="badge-dot"></span>unaged</span></td>
+    
+    
+    <td data-label="Newest data" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Age" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">—</td>
+    
+    
+    <td data-label="Fresh if" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Rows" data-kind="num" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap num text-right text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Note" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 whitespace-nowrap text-ink">no scheduled writer or no date of its own; not aged</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Source" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">data/processed/value_chain_universe.csv</td>
+    
+    
+    <td data-label="Status" data-kind="status" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap text-ink"><span class="pill pill-neutral"><span class="badge-dot"></span>unaged</span></td>
+    
+    
+    <td data-label="Newest data" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Age" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">—</td>
+    
+    
+    <td data-label="Fresh if" data-kind="mono" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Rows" data-kind="num" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap num text-right text-ink"><span class="text-faint">—</span></td>
+    
+    
+    <td data-label="Note" data-kind="text" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 whitespace-nowrap text-ink">no scheduled writer or no date of its own; not aged</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Source" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] font-mono text-[12px] font-medium text-ink">data/processed/capex_model_checks_log.csv</td>
+    
+    
+    <td data-label="Status" data-kind="status" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap text-ink"><span class="pill pill-good"><span class="badge-dot"></span>fresh</span></td>
+    
+    
+    <td data-label="Newest data" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Age" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">1 d</td>
+    
+    
+    <td data-label="Fresh if" data-kind="mono" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">≤ 365 d</td>
+    
+    
+    <td data-label="Rows" data-kind="num" class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]   whitespace-nowrap num text-right text-ink">222</td>
+    
+    
+    <td data-label="Note" data-kind="text" data-empty class="border-b border-line-soft px-3 align-top py-1.5 text-[12px]  pr-5 whitespace-nowrap text-ink"><span class="text-faint">—</span></td>
+    
+  </tr>
+    
+  </tbody>
+  
+</table>
+</div>
+</div>
+
+<div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-2.5 text-[12px] text-faint">
+  <span class="num">11 files<span data-scroll-hint hidden> · <span class="text-muted">scroll sideways for more columns →</span></span></span>
+  
+  <span>Sorted by rows, Z→A</span>
+  
+</div>

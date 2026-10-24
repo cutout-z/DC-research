@@ -1,0 +1,823 @@
+<input type="hidden" name="sort" value="source" form="t-news_feed-form">
+<input type="hidden" name="direction" value="asc" form="t-news_feed-form"><div class="scroll-cue" data-scroll-cue>
+<div class="max-h-[640px] overflow-auto" data-scroll-x tabindex="0" role="region" aria-label="Catalogued articles, scrollable"><table class="w-full min-w-[640px] table-fixed border-collapse dt-stack dt-stack-labels">
+  <colgroup><col class="w-[11%]"><col class="w-[40%]"><col class="w-[13%]"><col class="w-[12%]"><col class="w-[7%]"><col class="w-[6%]"><col class="w-[5%]"><col class="w-[6%]"></colgroup>
+  <thead><tr>
+    
+    
+    
+    <th class="th     pl-5 "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "published", "direction": "asc", "page": "1"}'>
+        Published<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "title", "direction": "asc", "page": "1"}'>
+        Title<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="ascending">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink text-ink text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "source", "direction": "desc", "page": "1"}'>
+        Source<span class="w-2 text-[10px] ">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "bucket", "direction": "asc", "page": "1"}'>
+        Bucket<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "tier", "direction": "asc", "page": "1"}'>
+        Tier<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-right"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "score", "direction": "asc", "page": "1"}'>
+        Score<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-right"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "seen", "direction": "asc", "page": "1"}'>
+        Seen<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button><span class="ml-0.5 inline-flex align-middle"><span class="tip" tabindex="0" role="note" aria-label="Times the catalogue lane observed this article."><svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>
+</svg><span class="tip-body" aria-hidden="true">Times the catalogue lane observed this article.</span></span></span>
+    </th>
+    
+    
+    
+    <th class="th      pr-5"
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed"
+              hx-vals='{"sort": "url", "direction": "asc", "page": "1"}'>
+        Link<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+  </tr></thead>
+
+  
+
+  
+  <tbody>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2025-10-20</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Nvidia Makes $350 Billion Deal With OpenAI. What It Means for the Stock. - Barron&#39;s</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Barron&#39;s</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNU2FtOThNeHppdzlWaXl0RXJDblFYN2U0d25KamdlRGEyODhPR295TlRNbkV2Z2J5enRPeUlpaS0xSE95QW84Y0tlUXcwU3owNWw4dV9QTWNYcWVOQXdORm0xVTl0eVc3dW9RVFhYZXRISWpTLTB5UDY0X3M3NmJobjEzYw?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-19</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Nscale, Anthropic Eye $45 Billion Cloud Deal as AI Trade Rebounds - Bloomberg</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.964</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPdDhEczFTa21CdjNjVHFHOEI0ck9RU3F0N2JpSjJDa2MzeGs0M0ppUkhiNVIwSERLVEV3VVhpYjNiYmFxY0pOTzduZ2xSalM0MGhLOTVzWkxuNDdxdXBvMU00djdQNFlySEVMS1k4WHFRTmNVZWdhdVhZbDVNeVA2T1VqUDdJMzFITkREVDVuWkJlYktSVHFWd2lrZDdEUXRPQmZxSzhwLTVxN1czTEpfU3hrTWJWeFBU?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-19</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Microsoft Scraps UK Data Center Deal With Nscale, Telegraph Says - Bloomberg</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Hyperscaler CAPEX</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.847</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNYXhlWkpqYnAwNVVYQjBLWTdQdi1HYm50VjhBQ3UwTkNhc0gtTGhoMnluWGxuMVdmZWM3eFRjVFA5dWZ0STlFRVJ6S090WVFveFF1RVNjcHFpd2ZNTFJfamxDNGl6YTNrSmkta2pteXpnMElHVXVjcUI5WDNlemltdVRSZURQUXBmcTFrV0NyY2R0a3J1clFlOGU2RjRTbVRnbzRnU3NvRktJR3g3RUw4Zm9vTnE?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-05-05</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Infratil Shares Surge as CDC Signs Monster Data Center Deal - Bloomberg</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.820</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">9</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxOVUZfazRJWkNmNFI4NkE0eEFRcS1EeDY2aFhlSWlfSkV1N3A4cjdBY1JPdlZoNVVuaDZacmFlbFZHZU9wZTJPS1BNMkhoR1JKYk9OWHp0VjhwSHFRTzFNVlpvSzU4bmJlSm5YcFcyU3I2ZmRYZkRFSnhXam10bW1GTFlKZTQtYndOY1dueURvSzgydTJ2T2o2OUZRVTB3ZFVBc29UYTdOWlI3SWNZbEJz?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-07-19</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Anthropic, Authors’ $1.5 Billion Deal Earns Final Approval (2) - Bloomberg Law News</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg Law News</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOOGxoR3pVLTFoaWl0STlsdXYyR2FHQVQ2RWVORTBYNWVFU1hvVE5NYnpnRGZ3dTRvWFA0aEtmNHNXMVR0Z1gtampaVG11blFTWGoxUEJjaHM4djBzVTlxSEtLY0JwUWlxLUNOVG5qN0d4a2s4Q05OM0UtNVdLS2hZVmMtMjlnUUU0ZWtuYnAxclUzWWZGcFhzd1JaWQ?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2025-10-27</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Anthropic’s $1.5 Billion AI Deal Covers Trump, Four Justices - Bloomberg Law News</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg Law News</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxNSzRGcVhWTzdMenhxLVRMc3FTeHp5OGJNT2J0OUVjY3djSTFhWDRCN1JfRHAydDM3NW94MmVMWlp4ekxOODRNRm9jTHBpMUVsQjFJM3BzeTVmRm1wTlhtSklrUk52cm5BbXhLcVNQT1J0V2hBeUw5dzJWM2c3RFZEdEU5QkI5SGNkSEpPdGQ4eHA2NmdiTWlGRDVB?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2025-09-24</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Anthropic $1.5 Billion Copyright Pact Wins Judge’s Approval (2) - Bloomberg Law News</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg Law News</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxQdkQtRDV6ZTRvQ0I3UnhNR0VFUUFpMnM4aHhzZGg0dExFamN6OC15Z3lsdGlYQ2EyVDAwZlI4TmRGYVRPbzFHUVNnRGdFQjhPRnowdTVCVmFQYi1fRlBjbjRuSlpKMXdkZjVJV3ZpbE1aRno5cnBmdjJSRGF3OWNWV0VvemNMMkl4YWJpb1doZ05jdGQ4eWZJTE9ORWlvVVJCbEE?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-22</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Nextdc Claws Back Losses after Profit Warning Prompts Plunge - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.603</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPUzFQNW5GUWpqSG5TT01DcDF0eU5qMXhaRHQ4eEF4ak5VQk1CRXdSeUVuWUNqM2d1c1hxQWtKbGpFcmZCM2VpSl9FUzBWc2M4ZmQwOUw5TVRKMVpvaklybFJaT2J6UHNuN2RacktfTFZkaTMyajJfV3c4MGZZV19SY0d6ZklFOHVQRlN5b1NDQ2tmX204eG1hczg5d3ZvSlpTVlR3TmZLbmtfWkRHdl9kUQ?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-21</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Nextdc Shares Plunge 44% After Public Backlash Hits Data Center - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.618</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOc2cycW1CNXNjRGR3blYyX0w5SWpPYURMTUFCQ1l6M1lJRUlPcHB6NHM3MncxQy1wYXBkeW12eC1lTmJHMXhPNWJUeXNTcFR3cEZLMmlCamtNcEZCbHpLbVN2aXJNM0lDWmZKemsyX0p3N05hMXBVdVFiOEhrQl82ZVBMRWFmanZqUHJabnQzUWJFYnI3Sl9QVGprLVNSVDFxNFlkb0dSX1JBMVZrY2NwMVM2ams?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-19</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Nscale, Anthropic in Talks for $45 Billion Cloud Computing Deal - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.959</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxOWElPM1lSczhESmRndWxlZjZIbWhtVS0zZXBjS2Z2Qi12ZVIwcXR0c2lZTWNSYjQxc2lTUnBGaEVBQWZpbUFhNUxQcUhNeVByZVFPQ0hJbm52TVVrX2c0WFFaMDJHSjktNHV3VFVhcDZoY2Ewc1Q4Yks2N0FTek1HR0lYYVoxV0ZYb0Y0c2RmUUtRdVlSbDRNYWJvcm5PeFdqQkVOeFVfQ1RMZTZTeGtzcDFR?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-16</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ARK’s Wood Says CoreWeave Will Overcome Debt Fears on AI Demand - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.844</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPYUJuY2N3QTRUX3ZRYUs1QzNvcENnWEJUQ00tVmtsN2JRUXNCNkEzbUpGYUlWSjhRWVp2R2JLeU8yOVdWNEN4MXBqV0ZxdFBtc3NKUTFhUlRkX1dHeWIwUkN1MmJ2LVEtN3lVZ01GSDdWRXB6RUtZX2FUX0duU1p0em00VVlRU3lyTHUzUEpxQnJsTXpwbUt2VGkyc1hPenVibnc1aDA4UkJnY04tMWx2ZWNqMl8?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Watch Anthropic’s IPO Momentum as CoreWeave Rattles AI Trade - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.856</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNejBUNmtVS0x2UExIRWFGajc2U3NUR0lxbGc4MkNKMVl5dGE4a1JocWE2Vm1WV3lvcW4tM2dvWFNKbzN3OTRzT2xfNk5hd3cySDNjV2t2cmF4TUVBNnNRWDBsdXVueGhWODV0Ql9teFhzSnBpaGZHaFc5bk9jd2h0MlRQbHV3TFE?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-10-01</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Nvidia-Backed Firmus Eyes $30 Billion Valuation in Australia IPO - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.570</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNZUQxbHhMNjVnanZPM1U0STdyQlVaQ0tjYWhFY0ZWVlJQTVlmUEI5TDlxVlpjSG5OMWdHalE4Wmx4c2FlYUlFSnc1MEZmQ3A1LVhOMUVuQ2xVVzRFRjgwTG1NWDR4eGhxcExJYXdLSTdSZ2lYODd1MDdTMWVsM1B6Z1ZyVDhiRF8yR05LY1lZY3dfalNlTTZLaWZBSEZvZFE3VGZRTE9PLW12MGVnbUpUaExRVQ?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-30</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">FTC Probing OpenAI and Anthropic Over Product Safety Concerns - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.850</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQNWthUTUtdzAtb1NKYkQ4TDdxSGV4ZC1NV2QxTnE5a2VzaldWRWowU3VDUUxWV3lIajZzRnNYLTJUV3RCaTFxUU11MEhKSFF4UmFMNTBqV1g0bmljbWE3bXJJc0tNOE5XX3hZQjRlUS1sMFlaS0FDWHZ2WmdQU05zSV9uSFpYNlF0SmVHeEVTTnVkdzdNZHZZbGJaemhGQUoxT0gxVm1kbnJ1dTlhZm8zeFJR?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-24</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Watch AI: Anthropic, Akamai Strike $12 Billion Computing Deal - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxOdGxQNEdtc0xXS1RvZU40S3ptVFhYdkN6ZE91cnQ3WDF1U01MT0x5RURoa2pCR3BNenBuQ3A4aFJQTm5fVmVQZFJuczVwY3p3djhzMGRpSHNjNnEzSFpfclotUTJvcUxJVWJGMjh2TWU4Rjh3dnN6RHVIZWRNVjR5cHo1SVpHWk5IenkzRTJTZFVEV1dCS0pXTjd2SzR4T0tvNUlvVzFjcTBzeFU?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-23</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Watch Akamai Surges on $12 Billion Anthropic AI Computing Deal | Closing Bell - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPNzVtS2F0RnpfSmhfNVBUVURpRnJ6Y2Eyd2FrYzZ3M1Y3Qm4xYWJkZWZzWWNVN29ZM0Q5elRzaXd3LXRDRDlDdXkzQU1vZUpQU0JnaVJmYXR5czFUSG1zVEh6aDduUzluemU4ZUxYMTdYRjBaUkw1NGlEZ2ExR3ZFd3RjUXRqS1lqc2p5elpYajdJLUVmMlcyNkNQVEt1dHFpZlVYZg?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-22</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">CoreWeave-Tied Data Center Raises $1.1 Billion in Junk Bonds - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQTGhRTF9zbVJKS01hcmdKZGdkQ2U2dWpuU0ZkYy1Remw4UzZtWFpWQkJUUWFiOUllVUp4ZC1OZXVKYXFfekVqYTBaRE56WThaZk1lZlZqNVhQbUdHVU9jcjBYWEJhbVBJWkpoeldZWHlEWmNKVTFLbzNickZiNUhqeW90d0RnQmVBT0xjdnQyU3lkcUdpdkx3OUpHX0lzZjg2MnFOM3JZZnVJQnZHQ2Mw?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-20</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Watch SoftBank Seeking Over $11 Billion in Junk Bond Deal for OpenAI Investment - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPXzZ0VHBnWWttMmFkTUZBcGJDdzRidWw5WjluOGN1V2N2ZURuRERVcW5qRG9YaGp0S0g5QldfWThBaXRQYWNXUGwyTE1oSlN5WnlBanJpWjQweWJjYUJtX3JBWGJrZXo4ZFBpalo5cmg1YkE1QUpxeko0dE9UZ0NJRERhRHlReVljWDFUSERzS0tnYWFEUmZSSVhjb2R6ZHQ2WGNhVVA3SGs?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-16</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">CoreWeave Seeks to Raise $3 Billion in Convertible Bonds - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOS1ZwWmg2SE1TRzlLRjE1LWZqeURha3g0clNmWFFHRFpzcHBhOVVTQWw2d0g0RHhmWWVmT2ZSN2tLaEotVWlLaklNRDBqRG9yS2JIY3lFX2R2TGlEV2FwVHlxQ0M5dG5lQ2hucnpLaUk3ZlEyUEFCQ0JfQ1JvOEdzbFFRMW1WYkI2cF92SnRxOThJWDVSUm9GcHd6bHJrWkdYQ1lWSGwxN2J4Ul8z?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-09-06</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Mistral AI Raises at €21 Billion Valuation in Samsung-Led Round - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNUC04eHBZSndveGdwcG9EdUdhRkxyNTBvZ1JYbXNqak9nekdLWW8tMDMxalh2eW9DejdkRWZtMWlGVDM1X3c2YlM1RHFnc21sNTFFLVRLZU81NzdpcjBtTl96MXExY3hEbS1MTjlRTkpDM0FLUnVQRi1ZNEM5dk1lX0p6OUpnWnd4OWI5VDhjaUlfN1loSVVYRUNRSTg1dXY1YUFONkRqVjlLczFuWkdyYllBUQ?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-08-31</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Watch Tech and AI: Anthropic Agrees to $35 Billion Cloud Deal With Lambda - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxOWW9XZ3dLWWtfYnVRbmx3OS1sSE82ZXBmdFVUUU9VOXBkaXRHclp6OWIyckJqaEJxbHpRWl9SbWRINER3SDNpZXdpMGhqRnhPTkd6VUdVYlA5WDk4bHpPUzk4QzROdGg5THlGT3JxUWFJN3NGV2w3R1hRX0kwNk90azB3akVkb3Y5RFNaYmpTaEdkUWV1d2RQUVJXWEs2R0xwTzlwZGRXOS10ZmNh?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-08-30</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Anthropic Seals $35 Billion Cloud Deal With Nvidia-Backed Lambda - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.970</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPeTlFc2NRUEtocndRTGpPRnNGT1djeW1FbnZjUm9vSTVjclRudzktQlNvY1huVVNUVVpkX1A0SXh1ZkZyVDZpeVZfVEdQdGtPc0VqRVZ1ZUNzcG5oWmtVVktCRzdPZGFZUkd6Mm5rdEhINUZQZjFrQzZCaUdtV2ZTLXRqdWNTMVpCOWUyU3BWNDZoeHJZOXd0cXdhRE5BaG1uV3lyUTBKWkNIaXp6NHdRaUVCd3I?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-08-19</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Broadcom Seeks More Than $60 Billion in Latest AI Debt Deal - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.845</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxQaW1JdkM5Si1JUXF0SjF4aWw5SXlicHI4NmV0SndDZHc2ejdMY3ZnVjJaRG5lQ0w4YVUtejhYT1lYR0NJR3BORnFhUi1neE4yOGJHRGVNMjZFUXZxSHRXa0tHcmw4M0M2ekYxYTdSWFJJb2loaDU5MEEzYzZweF9paUdBWEVNN0ltWS00X2NWNEhmeFpvZ3U3S2N3ZTZBSGdORGo3d1lHc3o2MzhSY2c?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-08-19</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">AI Chip Startup Fractile Seeks $6.5 Billion Value After Anthropic Deal - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Frontier Labs</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">HIGH</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.923</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxPQ0hWZktsTEJtWklDQmI0N1BRV2RHY3c5NHVEVWFOZWVKUkhjZExVazNWaDBmaWFGd3REcVROZEZlVjFNS1FWdDRueVl0Sk1Ga2M1VERzRXU2UUdoVEFLeWFTRE44UVNOWl9zcG1zTHVaX18xQ1RybFlHSDdyVlh1RHlJVjZnd0FIYi1SbG56eXlSU3BOZzI3cGJHZ3AyWVh1ZEtEVDFYNml0S3I1Q2hZalVKN1Q2ZmNGVnFIbzgyR1NqRllqR0E?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Published" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  font-mono text-[12px] font-medium text-ink">2026-08-17</td>
+    
+    
+    <td data-label="Title" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Alphabet Kicks Off Aussie Dollar Bond Sale as AI Spending Soars - Bloomberg.com</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Bloomberg.com</td>
+    
+    
+    <td data-label="Bucket" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">ANZ DC</td>
+    
+    
+    <td data-label="Tier" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MEDIUM</td>
+    
+    
+    <td data-label="Score" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">0.650</td>
+    
+    
+    <td data-label="Seen" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOb1A0dmpZOXRuRmpXQjFWMEtqMklYdGRNbFlsMzFiaXVjU0RiM0RaNGhqdzItUEhQa1pYaXJ6b3BBRVY3UUtvNmhLSUE2X2xCT3ZNczhLWUc0eFVoTmllbWlENmhVcjBRcndLd3JuOWotb19wOTRVOTFKYVV2bmpKa09UZExVNWhCcmdCVlItZm1uM2JBQTF6Rjdad2t4RnF4RE5LTk1EWEN5MDdpRU5ubDlZcmo?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    
+  </tbody>
+  
+</table>
+</div>
+</div>
+
+<div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-2.5 text-[12px] text-faint">
+  <span class="num">711 articles · page 4 of 29<span data-scroll-hint hidden> · <span class="text-muted">scroll sideways for more columns →</span></span></span>
+  
+  <div class="flex items-center gap-1">
+    <button type="button" class="btn btn-icon h-7 w-7 disabled:opacity-40" aria-label="Previous page" 
+            hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed" hx-vals='{"page": "3"}'>
+      <span class="rotate-180"><svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/>
+</svg></span></button>
+    <button type="button" class="btn btn-icon h-7 w-7 disabled:opacity-40" aria-label="Next page" 
+            hx-get="/partials/t/news_feed" hx-include="#t-news_feed-form, #news-filters" hx-target="#t-news_feed" hx-vals='{"page": "5"}'>
+      <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/>
+</svg></button>
+  </div>
+  
+</div>
