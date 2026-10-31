@@ -1,0 +1,82 @@
+<dialog class="drawer drawer-wide" aria-labelledby="note-title-4"
+        onclose="this.remove()" onclick="if (event.target === this) this.close()">
+  <div class="flex h-full max-h-[inherit] flex-col">
+    <header class="flex items-center justify-between gap-3 border-b border-line px-6 py-3">
+      <div class="flex min-w-0 items-center gap-2 text-[12px]">
+        <span class="whitespace-nowrap font-mono text-muted">2026-10-28</span>
+        <span class="badge hidden sm:inline-flex">AI &amp; DC Dashboard</span>
+      </div>
+      <div class="flex shrink-0 items-center gap-1">
+        <a href="https://x.com/_clarktang/status/2115214764812952055" target="_blank" rel="noopener noreferrer nofollow" class="btn h-7 text-[12px]">Open original<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a>
+        <button class="btn btn-ghost btn-icon -mr-2" aria-label="Close note" onclick="this.closest('dialog').close()" autofocus><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/>
+</svg></button>
+      </div>
+    </header>
+
+    <div class="min-h-0 flex-1 overflow-y-auto px-6 py-6">
+      <div class="mb-2 font-mono text-[12px] text-faint">@_clarktang</div>
+      <h3 id="note-title-4" class="max-w-[60ch] text-[18px] font-semibold leading-snug text-ink">As I - along with all public analysts - continue to pore over the Anthropic $ANT S-1 - some… [automation, datacenter, gpu, llm, openai]</h3>
+
+      
+      <div class="note-body prose mt-6 max-w-none text-[14px]"><h1>As I - along with all public analysts - continue to pore over the Anthropic $ANT S-1 - some…</h1>
+<p>As I - along with all public analysts - continue to pore over the Anthropic $ANT S-1 - some thoughts / observations:</p>
+<p>The principal question for Anthropic: ultimately boils down to will their revenues generated outpace their fixed compute commitments? This is the principal dilemma Dario lays out in his interview with Dwarkesh. Procure too little and you run the risk that you are under resourced in a race against other AI labs - and forced to procure compute at any price into an already tight market (aka Anthropic this year). Provision too much relative to your revenue traction and you run the risk of “blowing up”.</p>
+<p>Compute Qualities</p>
+<p>Compute for an AI Lab generally has the following characteristics:
+• Take or pay contracts - given provider fulfills performance SLAs
+• Annual cost of usually 1/4 of the capex required - on a rolling basis (owned / leased chip math)
+• Configuration of counterparty (hyperscaler, neocloud, self-build) and accelerator (Nvidia GPU, Hyperscaler ASIC (TPU, Trainium), 3rd Party Accelerator (Cerebras, etc), AMD GPU)
+• In general, self-build allows the labs (and the hyperscalers) the flexibility to “smooth” the existential curve. Building shell buys an AI lab / hyperscaler flexibility to adapt to their business needs. Contrary to fanatical consensus that there are “GPUs gathering dust and being hoarded” - the biggest cost in a DC is the depreciation of IT gear. Quite catastrophically money losing - vs over building land, power, shell but not equipping with IT gear (~20% of capex in land / power / shell depreciated over 10-20 years = 1 year of empty shell ≈ 1-2% of project “wasted” - vs ~80% of capex in IT gear over ~5 years = 1 year of idle GPUs ≈ 15% of capex wasted)
+• Labs are early in building out this function - as managing and developing sites is a drag on resources, heavily physical operation, requires scale and IG ratings etc (for now they borrow other people’s credit - Google backs the data center leases, Broadcom backs the chip lenders) - but will be an area the labs will extend to over next 3 years</p>
+<p>The Economics Of Compute</p>
+<p>I have heard many takes on this and efforts to analogize to other industries. Here is a compilation of my thoughts:</p>
+<p>The economics of producing tokens are constantly evolving as well. Every generation there is a 3-10x improvement on the total hardware (maybe total 1.5-2x improvement from strictly hardware design, and remainder from hardware-software co-design improvements (scale-up domains, new numerics, custom HBM, offloading the network etc)).</p>
+<p>On top of that, the labs have shown an ability to squeeze even more out of their internal inference serving software - through many many techniques like batching, model parallelism, speculative decoding, prefill/decode disaggregation, etc. You can see the price decreases generation on generation but holding a capability or bench score constant, the price of compute has fallen 1,000x+ in about three years (roughly 10x a year, and far faster on some tasks).</p>
+<p>This is perhaps the most important thought for this type of business: the implicit operating leverage that exists. If you are a 10% GP margin lab (100 revenue, 90 cost), and your cost is falling 10x year on year, if you keep PRICE per token FLAT AND YOU DON’T GROW. Your NEW GM is 91% (100 revenue, 9 cost, 91 GP). Moreover, because your fixed compute is a FIXED COST... the moment you do grow, with the SAME COMPUTE CAPACITY, you are now able to serve 10X MORE BUSINESS (1,000 revenue, 90 cost). You can move from a $10 GP business to a $910 GP business in 1 year - insanity</p>
+<p>I know, I know. Sounds too good to be true. What does this assume? This assumes an unlimited TAM - that as fast as you are able to free up demand, you are able to match it and sell it (rate of diffusion is perfect). It assumes you pass no value back to your customers (not true). It assumes no competitive pressures (aka competitors will not offer a more capable model / compete on price to win business). It assumes you will not create more intelligent models which consume more compute per inference pass.</p>
+<p>All of these are not true - the environment does have those factors. But the way I see it is by early this year we discovered an amazing business with unprecedented unit economics which climbed the wall of worry of my analysis.</p>
+<p>1) Would these businesses ever get to large enough revenue scale to amortize the training costs? - YES
+2) Would these business ever get to unit profitability? - YES
+3) Would these businesses be sticky given the ease of switching API endpoints? - Not fully proven, but evidence is encouraging
+4) Would the models become commoditized and business is left to the app layer? - Not fully proven, but evidence is encouraging</p>
+<p>Beyond the compute, is a war for talent. Would labs be able to attract, retain and motivate the most talented engineers post-economic realization? This is an open question - but culture and alignment is key. This is not a comment on Anthropic or OpenAI or anyone else - but given the qualities of compute described above, it makes sense why the battle for talent has been so intense so far.</p>
+<p>There has been a trending chart on Anthropic’s compute efficiency and the fact that they only use 25% of their compute towards inference. That their gross margins are 85%.  I’ve heard takes all around the spectrum - bearish that it means they have overbuilt compute and bullish that they have the opportunity to earn a lot more. The same data point on both sides...</p>
+<p>I’ll offer my thoughts as the last piece and stop my consciousness dump &amp; save rest for next time... The reality is $ / GW for Anthropic is an output not an input. It is the confluence of many things - the hard work they (and Mythos 5.5+) are doing to improve inference throughput per unit of compute. This naturally increases this number. How much true competitive pressure they are facing (should trend lower if they are truly facing competitive pressure - from a place of weakness). Or from a position of strength - to pass this along to customers to extend / entrench their business and applications deeper with customers. And the way they think about this inference compute is not an “overbuild” - because every MW they reclaim from inference, they can use to deploy for training, or internal use (aka using Mythos 5.5+ to build / find more optimizations for their system). This is the recursive loop people talk about.
+I don’t want to say it’s all roses as I see it - the reality is that Anthropic only has 1 real year of operating at this scale. The qualities of an AI lab as a business - we are just figuring out and have discovered this year. There is a stable of 5+ credible competitors who haven’t really pressed the gas on competition yet between OpenAI, xAI, Google, Meta, Chinese (DeepSeek, Moonshot, Zhipu, Qwen, Byte - with a fundamentally cost plus / margin destructive mindset), alongside some other neolabs who could come up with something completely different.</p>
+<p>Safety and alignment are also real risks to these businesses - not just marketing fluff. As we explore new ways to harness AI and extending the capabilities of these models, we have an increasingly difficult job of making sure that they do not break - which means that an increasing % of these company’s compute needs to be dedicated to safety (20% compute+). There are real risks that the revenues generated may slow down relative to the growth of the fixed cost base. So we need to be sober about the risks.
+But despite all of this, I come away excited at what the future holds for these labs. Take stock of what has happened in the last year - AI was still in chat bot mode for 99% of the world last year - and is still for 95% of the world today. We have come so far so quickly and we are just starting...</p>
+<p>The information presented in this post is the opinion of the author and does not necessarily reflect the view of any other person or entity, including Altimeter Capital Management, LP (”Altimeter”). The information provided is believed to be from reliable sources but no liability is accepted for any inaccuracies. This is for information purposes and should not be construed as an investment recommendation. Past performance is no guarantee of future performance. Altimeter is an investment adviser registered with the U.S. Securities and Exchange Commission. Registration does not imply a certain level of skill or training. Altimeter and its clients trade in public securities and have made and/or may make investments in or investment decisions relating to the companies referenced herein. The views expressed herein are those of the author and not of Altimeter or its clients, which reserve the right to make investment decisions or engage in trading activity that would be (or could be construed as) consistent and/or inconsistent with the views expressed herein.
+This post and the information presented are intended for informational purposes only. The views expressed herein are the author’s alone and do not constitute an offer to sell, or a recommendation to purchase, or a solicitation of an offer to buy, any security, nor a recommendation for any investment product or service. While certain information contained herein has been obtained from sources believed to be reliable, neither the author nor any of his employers or their affiliates have independently verified this information, and its accuracy and completeness cannot be guaranteed. Accordingly, no representation or warranty, express or implied, is made as to, and no reliance should be placed on, the fairness, accuracy, timeliness or completeness of this information. The author and all employers and their affiliated persons assume no liability for this information and no obligation to update the information or analysis contained herein in the future.</p>
+<p>On a personal note - Altimeter’s funds are large Anthropic shareholders. I was not involved in those private investments and have no economic interest in them beyond my own capital invested in our funds. These are my views as a public markets analyst, formed from the S-1 and public information. So welcome all honest pushback and debate. Not investment advice.</p></div>
+      
+
+      <dl class="mt-6 grid grid-cols-[88px_1fr] gap-x-4 gap-y-3 border-t border-line-soft pt-4 text-[13px]">
+        
+        <dt class="text-faint">Themes</dt>
+        <dd class="flex flex-wrap gap-1.5"><span class="badge">AI/DC</span><span class="badge">Supply chain</span><span class="badge">Macro</span><span class="badge">Commodities / energy</span><span class="badge">Company / security</span><span class="badge">Geopolitics</span></dd>
+        
+        <dt class="text-faint">Entities</dt>
+        <dd class="flex flex-wrap gap-1.5">
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">ANT</span>
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">NVIDIA</span>
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">Meta</span>
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">Google</span>
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">OpenAI</span>
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">Anthropic</span>
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">Broadcom</span>
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">AMD</span>
+          
+        </dd>
+      </dl>
+    </div>
+
+    <footer class="flex items-start gap-2 border-t border-line bg-surface-2 px-6 py-3 text-[12px] text-muted">
+      <svg class="mt-px size-3.5 shrink-0 text-faint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>
+</svg>
+      
+      <span>The note as clipped from @_clarktang on <span class="num">2026-10-28</span>; its frontmatter is not shown. <a href="https://x.com/_clarktang/status/2115214764812952055" target="_blank" rel="noopener noreferrer nofollow" class="text-ink underline decoration-line-strong underline-offset-2">Read the original post</a>.</span>
+      
+    </footer>
+  </div>
+</dialog>

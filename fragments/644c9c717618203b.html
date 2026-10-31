@@ -1,0 +1,822 @@
+<input type="hidden" name="sort" value="verdict" form="t-cic_attention-form">
+<input type="hidden" name="direction" value="asc" form="t-cic_attention-form"><div class="scroll-cue" data-scroll-cue>
+<div class="max-h-[640px] overflow-auto" data-scroll-x tabindex="0" role="region" aria-label="What needs attention, scrollable"><table class="w-full min-w-[960px] table-fixed border-collapse dt-stack dt-stack-labels">
+  <colgroup><col class="w-[11%]"><col class="w-[10%]"><col class="w-[20%]"><col class="w-[14%]"><col class="w-[14%]"><col class="w-[9%]"><col class="w-[22%]"><col class="w-[6%]"></colgroup>
+  <thead><tr>
+    
+    
+    
+    <th class="th     pl-5 "
+        aria-sort="ascending">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink text-ink text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "verdict", "direction": "desc", "page": "1"}'>
+        Verdict<span class="w-2 text-[10px] ">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "entity", "direction": "asc", "page": "1"}'>
+        Company<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "input", "direction": "asc", "page": "1"}'>
+        Input<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-right"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "model", "direction": "asc", "page": "1"}'>
+        In the model<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-right"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "latest", "direction": "asc", "page": "1"}'>
+        Newest public<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "since", "direction": "asc", "page": "1"}'>
+        Since<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "note", "direction": "asc", "page": "1"}'>
+        Note<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      pr-5"
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention"
+              hx-vals='{"sort": "url", "direction": "asc", "page": "1"}'>
+        Link<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+  </tr></thead>
+
+  
+
+  
+  <tbody>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Latest filed period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">H1 2026 (filed 2026-07-30)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">10-Q filed 2026-10-22</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">10-Q for the period to 2026-09-30 is filed; the model&#39;s latest is H1 2026</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026066773/meta-20260930.htm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Latest filed period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">H1 2026 (filed 2026-08-04)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">10-Q filed 2026-10-22</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">10-Q for the period to 2026-09-30 is filed; the model&#39;s latest is H1 2026</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Purchases of property and equipment: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$30.1bn (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$83.1bn (2026-01-01 to 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: 2026-01-01 to 2026-09-30 $83.1bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066773%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Purchases of property and equipment: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$28.5bn (H1 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$48.1bn (2026-01-01 to 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: 2026-01-01 to 2026-09-30 $48.1bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Depreciation and amortisation: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$6.4bn (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$19.5bn (2026-01-01 to 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: 2026-01-01 to 2026-09-30 $19.5bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066773%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Operating income: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$18.8bn (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$54.6bn (2026-01-01 to 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: 2026-01-01 to 2026-09-30 $54.6bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066773%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Revenue: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$60.8bn (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$181.7bn (2026-01-01 to 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: 2026-01-01 to 2026-09-30 $181.7bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066773%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Depreciation and amortisation: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$2.7bn (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$8.4bn (2026-01-01 to 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: 2026-01-01 to 2026-09-30 $8.4bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Operating income: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$-143m (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$705m (2026-01-01 to 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: 2026-01-01 to 2026-09-30 $705m</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Revenue: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$7.8bn (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$27.1bn (2026-01-01 to 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: 2026-01-01 to 2026-09-30 $27.1bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Finance-lease amortisation: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$79m (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$237m (2026-01-01 to 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: 2026-01-01 to 2026-09-30 $237m</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Finance-lease interest: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$64m (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$190m (2026-01-01 to 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: 2026-01-01 to 2026-09-30 $190m</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Operating lease cost: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$126m (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$362m (2026-01-01 to 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: 2026-01-01 to 2026-09-30 $362m</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Accumulated depreciation: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$67.1bn (Q2 2026 end)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$73.3bn (at 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: at 2026-09-30 $73.3bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066773%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Gross property and equipment: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$292.9bn (Q2 2026 end)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$326.5bn (at 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: at 2026-09-30 $326.5bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066773%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Accumulated depreciation: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$-17.3bn (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$20.5bn (at 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: at 2026-09-30 $20.5bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">SpaceX</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Gross property and equipment: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$83.1bn (Q2 2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$110.0bn (at 2026-09-30)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: at 2026-09-30 $110.0bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001628280-26-066880%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">Superseded</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Alphabet</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Construction in progress: latest period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$50.6bn (FY2024)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$55.6bn (at 2025-03-31)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">a later period is filed: at 2025-03-31 $55.6bn</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/edgar/search/#/q=%220001652044-25-000043%22" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Nebius</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Latest filed period</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">Q2 2026 (filed 2026-08-12)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">6-K filed 2026-10-22</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">7 6-K report(s) since the model&#39;s latest filing; one may carry results</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/Archives/edgar/data/1513845/000110465926117978/tm2628078d1_6k.htm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Meta</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Capex guidance, CY2026</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$137.5bn (CY2026)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$137.5bn (CY2026)</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">results on 2026-10-21 came after this guidance and the guidance file has not been updated since</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://s21.q4cdn.com/399680738/files/doc_financials/2026/q2/Meta-06-30-2026-Exhibit-99-1-FINAL.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">All</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">IT equipment useful life (assumption)</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">5 years (base case)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">3 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">3 filing(s) since the model&#39;s inputs discuss useful lives servers: read for a change in stated lives</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">All</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Facility useful life (assumption)</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">20 years (base case)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-23</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">2 filing(s) since the model&#39;s inputs discuss useful lives data centers: read for a change in stated lives</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://www.sec.gov/Archives/edgar/data/1181412/000162828026066880/spcx-20260930.htm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Anthropic</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Anthropic revenue (annualised run-rate stated by the company)</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$47.0bn (stated 2026-05-28)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">8 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">news since this figure mentions the company&#39;s revenue: check for a newer company statement</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxQRW4tSGppV2U0ZWtvaXBsQmlyaDVVLVFCSmJNMWdmMHpod0FWd25kUXRNQzFvZXJPTmhoQUNvMlFrQzI3NjBQVG9McWFPRHdUODhMbVItOGg4S0N3ZmJ4R2psZVd1aWFZM2M0aEY4R3VaYnFZWUxhOFZiRXAxTnc5UG9hMm1ERGpKbURkX3BWYzQ5UWl3THBFTDhWUWR0SVhUSWJsekpMZjM4OUZRQl9BVmY2djVKRENDSldCSUpOWmdvbHVK?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">OpenAI</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">OpenAI revenue (annualised run-rate stated by the company)</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">$24.0bn (stated 2026-03-31)</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">8 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">news since this figure mentions the company&#39;s revenue: check for a newer company statement</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPaElkWEJFUFBITjRRZXBRTDZaOWRoLU9weWg1Q2xuSHl5QUQyQU1vaTNZT0NXSjR5bTVrM0FtNUVSdkQ0MU1QbWtNb1VLUDg5cWNpN0pacTZ6TTRTV0YtXzJhdFptNEZBa0hCM0dXYjg0UjNBczUzMHJXOS1SZUNtWVJaZWhSMWdjSEhoUVNQV21XUHRXMkRTY3RwNlMyc0FWdjlqZXJPS3JnOUN6YzA4?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Verdict" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  text-ink">To read</td>
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">AWS</td>
+    
+    
+    <td data-label="Input" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">Headlines since the latest input</td>
+    
+    
+    <td data-label="In the model" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">latest input 2026-07-31</td>
+    
+    
+    <td data-label="Newest public" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1 to read</td>
+    
+    
+    <td data-label="Since" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">2026-10-15</td>
+    
+    
+    <td data-label="Note" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   leading-relaxed text-muted">1 headline(s) since 2026-07-31: unverified leads, never used as figures</td>
+    
+    
+    <td data-label="Link" data-kind="link" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 text-ink"><a href="https://news.google.com/rss/articles/CBMicEFVX3lxTE1VWlZIbExmMHg2OW9nYTBxc1RTRU9MWXdxQ09xdWxVTUE4UHVJRk5KNUp4UnJ6MlBjc1hPRmJjV2s0LWM4OHBJQmdDWmNOUFdBNF9UVG1OVHVLVndFTlY4WXJCQmU0WFdDcHl1bHpfeGY?oc=5" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-ink underline decoration-line-strong underline-offset-2 hover:decoration-accent">open<svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M18 14v4a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18V7.5A1.5 1.5 0 0 1 5.5 6H10"/>
+</svg></a></td>
+    
+  </tr>
+    
+  </tbody>
+  
+</table>
+</div>
+</div>
+
+<div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-2.5 text-[12px] text-faint">
+  <span class="num">31 inputs · page 1 of 2<span data-scroll-hint hidden> · <span class="text-muted">scroll sideways for more columns →</span></span></span>
+  
+  <div class="flex items-center gap-1">
+    <button type="button" class="btn btn-icon h-7 w-7 disabled:opacity-40" aria-label="Previous page" disabled
+            hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention" hx-vals='{"page": "0"}'>
+      <span class="rotate-180"><svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/>
+</svg></span></button>
+    <button type="button" class="btn btn-icon h-7 w-7 disabled:opacity-40" aria-label="Next page" 
+            hx-get="/partials/t/cic_attention" hx-include="#t-cic_attention-form" hx-target="#t-cic_attention" hx-vals='{"page": "2"}'>
+      <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/>
+</svg></button>
+  </div>
+  
+</div>
