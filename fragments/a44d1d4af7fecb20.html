@@ -1,0 +1,530 @@
+<input type="hidden" name="sort" value="share" form="t-or_day-form">
+<input type="hidden" name="direction" value="asc" form="t-or_day-form"><div class="scroll-cue" data-scroll-cue>
+<div class="max-h-[640px] overflow-auto" data-scroll-x tabindex="0" role="region" aria-label="Ranked by tokens that day, scrollable"><table class="w-full min-w-[640px] table-fixed border-collapse  " data-phone-scroll="register: sorted and compared down its numeric columns">
+  <colgroup><col class="w-[7%]"><col class=""><col class="w-[16%]"><col class="w-[18%]"><col class="w-[12%]"></colgroup>
+  <thead><tr>
+    
+    
+    
+    <th class="th    text-right pl-5 "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-right"
+              hx-get="/partials/t/or_day" hx-include="#t-or_day-form, #or-day-form" hx-target="#t-or_day"
+              hx-vals='{"sort": "rank", "direction": "asc", "page": "1"}'>
+        Rank<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/or_day" hx-include="#t-or_day-form, #or-day-form" hx-target="#t-or_day"
+              hx-vals='{"sort": "model", "direction": "asc", "page": "1"}'>
+        Model (OpenRouter slug)<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/or_day" hx-include="#t-or_day-form, #or-day-form" hx-target="#t-or_day"
+              hx-vals='{"sort": "provider", "direction": "asc", "page": "1"}'>
+        Provider<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-right"
+              hx-get="/partials/t/or_day" hx-include="#t-or_day-form, #or-day-form" hx-target="#t-or_day"
+              hx-vals='{"sort": "total_tokens", "direction": "asc", "page": "1"}'>
+        Tokens (day)<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  pr-5"
+        aria-sort="ascending">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink text-ink text-right"
+              hx-get="/partials/t/or_day" hx-include="#t-or_day-form, #or-day-form" hx-target="#t-or_day"
+              hx-vals='{"sort": "share", "direction": "desc", "page": "1"}'>
+        Share of day<span class="w-2 text-[10px] ">↑</span>
+      </button>
+    </th>
+    
+  </tr></thead>
+
+  
+
+  
+  <tbody>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">25</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">nvidia/nemotron-3.5-super-vl-20261015</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">NVIDIA</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">265,228,388,058</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">0.85%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">24</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">typesafe/jev-1.14-20261014</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Typesafe</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">289,680,180,668</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">0.93%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">23</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">deepseek/deepseek-v4-flash-20260423</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">DeepSeek</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">315,097,616,139</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.01%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">22</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">tencent/hy3-20260706</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Tencent</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">324,209,866,946</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.04%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">21</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">meta/muse-spark-1.3-contributor-20260902</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Meta</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">353,802,168,182</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.13%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">20</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">xiaomi/mimo-v2.6-flash-20260921</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Xiaomi</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">372,368,612,488</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.19%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">19</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">nvidia/nemotron-3.5-super-vl-20261015:free</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">NVIDIA</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">397,648,345,616</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.27%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">18</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">nvidia/nemotron-3-ultra-550b-a55b-20260604:free</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">NVIDIA</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">404,826,991,689</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.30%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">17</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">anthropic/claude-haiku-5.5-20261007</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Anthropic</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">406,158,079,465</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.30%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">16</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">typesafe/jev-1.13-20260917</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Typesafe</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">408,588,474,954</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.31%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">15</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">deepseek/deepseek-v4-flash-20260731</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">DeepSeek</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">413,305,372,562</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.32%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">14</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">anthropic/claude-sonnet-5.5-20260928</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Anthropic</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">418,133,165,748</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.34%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">13</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">moonshotai/kimi-k3.1-pro-20261023</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Moonshot</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">526,442,983,484</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.68%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">12</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">z-ai/glm-5.3-20260816</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Z.ai</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">616,347,656,931</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">1.97%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">11</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">openai/gpt-6.1-sol-20260929</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">OpenAI</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">670,862,913,180</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">2.15%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">10</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">minimax/minimax-m3.1-flash-20261019</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">MiniMax</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">685,743,799,264</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">2.19%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">9</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">stealth/crouton-alpha</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Stealth</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1,050,528,629,440</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">3.36%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">8</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">anthropic/claude-opus-5.5-20260921</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Anthropic</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1,052,183,573,588</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">3.37%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">7</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">stepfun/step-5-preview-20261008</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Stepfun</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1,121,266,108,615</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">3.59%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">6</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">openai/gpt-6-luna-20260922</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">OpenAI</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1,149,964,707,379</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">3.68%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">5</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">long-tail `other`</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Other (long tail)</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1,689,206,218,304</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">5.40%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">4</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">z-ai/glm-5.3-flash-20260826</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Z.ai</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">1,707,599,673,327</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">5.46%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">3</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">deepseek/deepseek-v4.1-flash-20260910</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">DeepSeek</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">2,544,602,564,658</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">8.14%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">2</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">tencent/hy4-20261104</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">Tencent</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">3,045,838,588,202</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">9.75%</td>
+    
+  </tr>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Rank" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  num text-right text-ink">1</td>
+    
+    
+    <td data-label="Model (OpenRouter slug)" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   font-mono text-[12px] font-medium text-ink">deepseek/deepseek-v4.1-flash-20261017</td>
+    
+    
+    <td data-label="Provider" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   text-ink">DeepSeek</td>
+    
+    
+    <td data-label="Tokens (day)" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   num text-right text-ink">7,829,090,060,105</td>
+    
+    
+    <td data-label="Share of day" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 num text-right text-ink">25.05%</td>
+    
+  </tr>
+    
+  </tbody>
+  
+</table>
+</div>
+</div>
+
+<div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-2.5 text-[12px] text-faint">
+  <span class="num">25 models<span data-scroll-hint hidden> · <span class="text-muted">scroll sideways for more columns →</span></span></span>
+  
+  <span>Sorted by share of day, A→Z</span>
+  
+</div>
