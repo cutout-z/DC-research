@@ -1,0 +1,284 @@
+<dialog class="drawer drawer-wide" aria-labelledby="note-title-67"
+        onclose="this.remove()" onclick="if (event.target === this) this.close()">
+  <div class="flex h-full max-h-[inherit] flex-col">
+    <header class="flex items-center justify-between gap-3 border-b border-line px-6 py-3">
+      <div class="flex min-w-0 items-center gap-2 text-[12px]">
+        <span class="whitespace-nowrap font-mono text-muted">2026-05-17</span>
+        <span class="badge ">AI &amp; DC Dashboard</span>
+      </div>
+      <div class="flex shrink-0 items-center gap-1">
+        
+        <button class="btn btn-ghost btn-icon -mr-2" aria-label="Close note" onclick="this.closest('dialog').close()" autofocus><svg class="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/>
+</svg></button>
+      </div>
+    </header>
+
+    <div class="min-h-0 flex-1 overflow-y-auto px-6 py-6">
+      
+      <h3 id="note-title-67" class="max-w-[60ch] text-[18px] font-semibold leading-snug text-ink">LLM Compute Costs: Fixed vs. Variable [compute, economics, llm]</h3>
+
+      
+      <div class="note-body prose mt-6 max-w-none text-[14px]"><h1>The Economic Architecture of Frontier Intelligence: Evolutionary Dynamics of Fixed and Variable Compute Costs in Large Language Models</h1>
+<p>The economic paradigm governing the development and deployment of frontier Large Language Models (LLMs) has undergone a fundamental transformation between 2020 and 2026. This period, characterized by the transition from research-grade prototypes to industrial-scale production, has seen the emergence of a \"Great Inversion\" in cost distribution. In the early era of generative artificial intelligence, the primary financial and technical barriers were concentrated in the fixed costs of pre-training---specifically the capital expenditure (CapEx) required for GPU clusters and the massive datasets needed to satisfy early scaling laws. However, as frontier models transitioned into global production environments, the focus of organizational spending has shifted toward variable costs, or operational expenditure (OpEx), driven by the persistent demand of inference and the innovative paradigm of test-time scaling.^1^</p>
+<p>The trajectory of compute costs is defined by a complex interaction between falling unit prices and rising capability demands. While the cost to perform inference at a fixed level of performance has plummeted over 280-fold between late 2022 and late 2024, the total compute required for training new frontier models has grown at a rate of approximately 5x per year.^1^ This creates a paradoxical economic environment: intelligence is becoming commoditized at the unit level, yet the total investment required to remain at the absolute frontier is accelerating toward the billion-dollar threshold.^4^ For enterprises and frontier laboratories alike, sustainable scaling now requires a nuanced understanding of how fixed R&amp;D investments amortize over the volatile variable costs of serving millions of concurrent users.</p>
+<h2>Fixed Costs of Structural Intelligence: Pre-training and Capital Expenditure</h2>
+<p>The fixed costs associated with frontier model development represent the structural baseline for entry into the high-intelligence market. These costs are characterized as \"one-off\" or periodic investments that do not scale directly with the number of user queries, though they must be refreshed with every major model release to prevent obsolescence.^1^ Analysis of the cost structures of leading laboratories, such as OpenAI, Anthropic, and Google DeepMind, reveals that compute infrastructure typically dominates these fixed costs, accounting for 50-65% of total expenditures.^7^</p>
+<h3>Hardware Procurement and Cluster Infrastructure</h3>
+<p>The most visible fixed cost is the procurement of high-performance AI accelerator chips. The evolution of these clusters has been dramatic: from the approximately 10,000 A100 GPUs used in the early 2020s to the current standard of facilities housing over 700,000 H100 equivalents.^3^ The hardware cost for a flagship model like GPT-4 was estimated between \$78 million and \$100 million, while Google's Gemini Ultra 1.0 reached an estimated \$192 million.^8^ These figures reflect not only the price of the silicon itself but the entire supporting infrastructure.</p>
+<p>The total amortized hardware cost for a frontier model is a function of the training chip-hours and the depreciated cost of the hardware, with a significant overhead (roughly 23%) added for cluster-level networking.^4^ AI accelerator chips like the NVIDIA H100 or the forthcoming Blackwell B200 represent the plurality of these costs, but they are supported by server components such as high-density RAM, fast storage, and sophisticated networking fabrics like InfiniBand or NVLink.</p>
+<h3>Amortized Development Cost Breakdown for Frontier Models (2024-2025)</h3>
+<hr />
+<p><strong>Component</strong>                        <strong>Share of Total Amortized Cost</strong>   <strong>Detail and Context</strong></p>
+<hr />
+<p>AI Accelerator Chips (GPUs/TPUs)     47% -- 65%                          Dominated by NVIDIA H100/B200 procurement ^4^</p>
+<p>Research &amp; Development (R&amp;D) Staff   29% -- 49%                          Includes salaries, equity, and benefits for researchers ^5^</p>
+<p>Server Components (CPU, RAM, SSD)    15% -- 22%                          Necessary for feeding data to GPUs at high speed ^4^</p>
+<p>Cluster-Level Interconnect           9% -- 13%                           High-bandwidth networking (InfiniBand/NVLink) ^4^</p>
+<p>Energy Consumption                   2% -- 7%                            Electricity for compute and cooling infrastructure ^5^</p>
+<hr />
+<p>The rate of growth in these training costs is approximately 2.4x per year, suggesting that the largest training runs will cost over \$1 billion by 2027.^4^ This trend indicates that the \"frontier\" is increasingly a territory exclusive to organizations with the balance sheets of sovereign states or multinational conglomerates.</p>
+<h3>The Experimentation Tax: R&amp;D vs. Final Training Runs</h3>
+<p>A critical second-order insight into fixed costs is the distinction between the \"final training run\"---the specific computation that produces the released model---and the cumulative R&amp;D compute required to reach that point. The final training run is merely the \"tip of the iceberg\" in terms of compute spending. For frontier laboratories, the majority of compute is consumed by exploratory research, scaling experiments, failed jobs, and models that never see public release.^10^</p>
+<p>Analysis of financial disclosures from 2024 and 2025 shows that final training runs typically account for only 10% to 25% of total R&amp;D compute spending.^10^ For instance, OpenAI reportedly spent approximately \$5 billion on R&amp;D compute in 2024, yet the final training run for a flagship model like GPT-4.5 was estimated at \$400 million---less than 10% of the total.^10^ Smaller \"catch-up\" companies like MiniMax or Z.ai show higher ratios (up to 22.6%), suggesting they can learn from the established frontier to skip costly exploratory phases, effectively reducing their \"experimentation tax\".^10^</p>
+<h3>Data Acquisition and Curation: The Rising Cost of Knowledge</h3>
+<p>As the industry approaches the \"data exhaustion\" wall, the cost of data curation has transitioned from a trivial scraping exercise to a significant fixed investment. Curating a dataset for a frontier model now requires sourcing, cleaning, and filtering tens of trillions of tokens. For a 1-trillion parameter model to be data-optimal under Chinchilla scaling laws, it requires approximately 20 trillion tokens, necessitating a corpus of up to 33 terabytes of high-quality text.^11^</p>
+<p>The fixed costs of data include:</p>
+<ol>
+<li>
+<p><strong>Licensing:</strong> Payments to publishers and content platforms (e.g., Reddit, Stack Overflow) to avoid legal restriction.^12^</p>
+</li>
+<li>
+<p><strong>Human Alignment:</strong> Human-in-the-loop (HITL) annotation for Reinforcement Learning from Human Feedback (RLHF) can cost \$100 per high-quality annotation. For models like Llama 3.1, post-training alignment required more than \$50 million in labor costs alone.^8^</p>
+</li>
+<li>
+<p><strong>Synthetic Data Generation:</strong> As high-quality web data is exhausted by 2026, firms must spend compute (a fixed R&amp;D cost) to generate synthetic data for subsequent models.^13^ Gartner predicts synthetic data will comprise three-quarters of AI project data by 2026, reducing real-world data needs by 70% but introducing new costs in verification and \"model collapse\" prevention.^13^</p>
+</li>
+</ol>
+<h2>Variable Costs: The Unit Economics of Inference</h2>
+<p>Variable costs in the LLM ecosystem are those that scale with usage, primarily represented by inference---the process of serving user queries. For enterprises putting AI into production, inference cost is the primary lever for sustainable scale.^1^ Unlike training, which is a bounded event, inference is an ongoing operational expense that never stops as long as users are active.</p>
+<h3>The Token Economy and Pricing Asymmetry</h3>
+<p>The fundamental unit of variable cost is the token. Inference pricing is typically tiered based on model capability, with frontier models commanding a premium over \"budget\" or \"flash\" versions. A persistent feature of the market is output token asymmetry: providers like OpenAI and Google price output tokens 3-5x higher than input tokens.^15^ This reflect the technical reality that input tokens can be processed in parallel during the \"prefill\" phase, whereas output tokens must be generated sequentially during the \"decoding\" phase, making the latter far more compute-intensive and slow.^15^</p>
+<h3>Historical Trajectory of LLM Inference Costs (Per 1M Tokens)</h3>
+<hr />
+<p><strong>Model Tier</strong>                <strong>Late 2022</strong>     <strong>Late 2025 / Early 2026</strong>      <strong>Economic Driver</strong></p>
+<hr />
+<p>Frontier (GPT-4 Equivalent)   \~\$20.00         \~\$0.40                        Architectural efficiency &amp; H100/B200 scale ^15^</p>
+<p>Mid-Tier (Claude Sonnet 4)    N/A               \~\$3.00 (In) / \$15.00 (Out)   Balance of speed and reasoning ^15^</p>
+<p>Budget (Gemini Flash-Lite)    N/A               \~\$0.075 (In) / \$0.30 (Out)   High-throughput, low-latency optimization ^15^</p>
+<hr />
+<p>The 10x annual decline in inference pricing outpaces the historical Moore's Law trajectory for PC compute, yet the aggregate spend continues to grow as the number of applications expands.^15^</p>
+<h3>Determinants of Inference Variable Costs</h3>
+<p>The variable cost of a single inference request is not merely a function of token counts but is influenced by several architectural and infrastructure factors:</p>
+<ol>
+<li>
+<p><strong>Model Size:</strong> The number of active parameters dictates the memory bandwidth required per token. Larger models require more GPUs to fit their weights and KV cache, increasing the per-token price.^17^</p>
+</li>
+<li>
+<p><strong>Context Length:</strong> The Key-Value (KV) cache grows linearly with the length of the input and output, consuming GPU memory that could otherwise be used for batching more requests. This creates a \"memory wall\" that inflates variable costs for long-document analysis.^18^</p>
+</li>
+<li>
+<p><strong>Hardware Utilization:</strong> For self-hosted models, the real cost is driven by GPU utilization. Idle GPUs are a form of \"fixed-cost waste\" that raises the effective variable cost per token. Continuous batching and PagedAttention are runtime techniques that increase utilization from 20% to over 60%, drastically reducing the \"bill\" for high-traffic services.^1^</p>
+</li>
+</ol>
+<h3>The Great Inversion: When Inference Dwarfs Training</h3>
+<p>For popular AI products, cumulative inference spend can exceed the original training investment within weeks of launch.^2^ NVIDIA estimates that 80% of an AI budget is typically spent on inference, with only 20% dedicated to training.^1^ This inversion has led to a paradigm shift in AI FinOps, where organizations prioritize model distillation and quantization to reduce the variable cost of production models. Distilling a 70B parameter model into a 14B or 8B model can reduce GPU requirements by 4-8x, turning a money-losing service into a profitable one.^2^</p>
+<h2>Architectural Shifts: Decoupling Capacity from Operational Cost</h2>
+<p>The drive to manage variable costs while maintaining frontier intelligence led to a pivotal architectural shift between 2023 and 2025: the transition from dense transformers to Mixture of Experts (MoE). This shift represents an attempt to decouple a model\'s \"total knowledge\" (total parameters) from its \"compute per token\" (active parameters).^17^</p>
+<h3>Sparse Architectures and the Economics of Activation</h3>
+<p>In a dense architecture, every parameter in the model is activated for every token generated. As models grow to achieve higher intelligence, they become exponentially slower and more costly to run.^17^ MoE architectures solve this by subdividing parameters into specialized \"experts\" and using a lightweight router to activate only a small subset per token.</p>
+<h3>Comparative Scale: Dense vs. Mixture of Experts (2025-2026)</h3>
+<hr />
+<p><strong>Model</strong>       <strong>Architecture</strong>   <strong>Total Parameters</strong>   <strong>Active Parameters</strong>   <strong>Operational Benefit</strong></p>
+<hr />
+<p>Llama 3.3 70B   Dense              70 Billion             70 Billion              Predictable latency, simple infra ^17^</p>
+<p>DeepSeek-V3     Sparse MoE         671 Billion            37 Billion              Frontier capability at 1/15th token cost ^17^</p>
+<p>GPT-OSS-120B    Sparse MoE         117 Billion            5.1 Billion             Extremely high throughput for agents ^17^</p>
+<hr />
+<p>The economic impact of MoE is profound: it allows providers to offer \"frontier-class intelligence without a proportional increase in compute cost\".^17^ However, MoE models present a new fixed-cost challenge: they require significantly more GPU memory to host their total weights, even if only a few experts are active. This makes them expensive to host (high VRAM requirement) but cheap to run (low FLOPs per token). Furthermore, expert parallelism introduces communication bottlenecks; at rack-scale, systems like the NVIDIA GB200 NVL72 are required to handle the inter-GPU data shuffling without leaving GPUs idle.^17^</p>
+<h2>The New Frontier: Inference-Time Scaling and Reasoning Costs</h2>
+<p>As of late 2025, the industry has recognized that intelligence can be scaled not just through more pre-training (fixed cost) but through more computation during the inference phase (variable cost). This is known as \"inference-time scaling\" or \"test-time compute,\" exemplified by models like OpenAI's o1 and DeepSeek's R1.^20^</p>
+<h3>The Trade-off Between Training and Inference Compute</h3>
+<p>A landmark analysis by Epoch AI shows that performance can be maintained by shifting resources between the fixed and variable phases. For instance, increasing inference compute by 1-2 orders of magnitude (OOM) can save 1 OOM in training compute.^21^ This is achieved through techniques like Chain-of-Thought (CoT), where the model generates many intermediate tokens to verify its own logic.</p>
+<h3>Compute Savings Potential through Phase Trading</h3>
+<hr />
+<p><strong>Task Complexity</strong>    <strong>Inference Compute Increase</strong>   <strong>Training Compute Saved</strong>   <strong>Economic Implications</strong></p>
+<hr />
+<p>General Tasks          1 -- 2 OOM                       \~1 OOM                      Shift from CapEx to OpEx ^21^</p>
+<p>Sequential Reasoning   2 -- 3 OOM                       \~2 OOM                      Higher variable cost per answer ^21^</p>
+<p>Mathematics / Code     5 -- 6 OOM                       3 -- 4 OOM                   High-cost, high-reliability agents ^21^</p>
+<hr />
+<p>This paradigm shift has profound implications for infrastructure. Analysts project that inference will exceed training compute demand by 118x by 2026.^20^ As \"long thinking\" models become the standard for complex enterprise tasks, the variable cost per query will likely increase, even as the unit cost per token continues to fall. A reasoning model may generate 10-100x more \"thinking tokens\" than a standard model, making the total cost of a reasoning-based answer significantly higher than a simple completion.^20^</p>
+<h2>Hardware Generational Dynamics: A100 to Blackwell</h2>
+<p>The evolution of compute costs is intrinsically tied to the cycle of hardware releases. Each generation of NVIDIA GPUs---from Ampere (A100) to Hopper (H100) and Blackwell (B200)---has redefined the price-performance baseline for both training and inference.</p>
+<h3>Generational Cost-Performance Comparison (Early 2026)</h3>
+<hr />
+<p><strong>Attribute</strong>         <strong>NVIDIA A100 (80GB)</strong>   <strong>NVIDIA H100 (80GB)</strong>   <strong>NVIDIA B200 (192GB)</strong></p>
+<hr />
+<p>Architecture          Ampere                   Hopper                   Blackwell</p>
+<p>Memory Bandwidth      \~2 TB/s                 \~3.3 TB/s               \~8 TB/s</p>
+<p>FP8 Support           No                       Yes                      Yes (Improved)</p>
+<p>Peak Compute (FP16)   \~312 TFLOPS             \~989 TFLOPS             \~2,250 TFLOPS</p>
+<p>Power Consumption     \~250 W                  \~350 - 700 W            \~600 - 1000 W</p>
+<p>Market Price (New)    \~\$15,000               \$25,000 - \$40,000      \$30,000 - \$50,000</p>
+<hr />
+<p>Sources: ^19^</p>
+<h3>The Impact of Blackwell on Variable Costs</h3>
+<p>The transition to the Blackwell (B200) generation is critical for the economics of 2026. While the acquisition price of a B200 is higher than an H100, its variable-cost efficiency is superior for frontier-class models. The B200 boasts double the memory capacity and 2.4 times the memory bandwidth of the H100, which is the primary bottleneck for inference speed.^19^ Furthermore, the introduction of FP4 precision on Blackwell allows for 1,500+ tokens per second, making it 3.5-4.0x more energy-efficient (Tokens/s/W) than the H100.^2^</p>
+<p>For organizations self-hosting models, the B200 offers a lower \"break-even\" point compared to cloud rentals. A self-hosted B200 cluster can be 6x to 30x more cost-effective operationally than cloud-based on-demand H100s for continuous use, provided the initial \$400,000+ CapEx for an 8-GPU node can be amortized over its three-year lifespan.^25^</p>
+<h2>Human Capital: The Hidden Fixed Cost</h2>
+<p>While compute often takes the headline, human labor represents a substantial and rising fixed cost. Frontier labs spend 29-49% of their budget on staff.^5^ This includes not only ML researchers but also the infrastructure engineers required for \"site reliability\" on massive GPU clusters.</p>
+<h3>R&amp;D Labor Cost Trends (2025-2026)</h3>
+<hr />
+<p><strong>Role</strong>                <strong>Responsibility</strong>             <strong>Annual Total Comp (US)</strong></p>
+<hr />
+<p>ML Engineer (Senior)    Infrastructure &amp; Cluster Ops   \$130,000 - \$200,000</p>
+<p>Research Scientist      Algorithmic Development        \$200,000 - \$1,000,000+</p>
+<p>Prompt/Eval Engineer    Alignment &amp; Testing            \$120,000 - \$180,000</p>
+<p>Data Engineer           Synthetic &amp; Raw Pipelines      \$150,000 - \$200,000</p>
+<hr />
+<p>Sources: ^26^</p>
+<p>For enterprises, building a custom LLM application typically ranges from \$150,000 to \$750,000, with labor and data preparation consuming 70-90% of the budget.^28^ Interestingly, while compute costs are falling 10x annually, human labor costs are rising or remaining stable, making talent the increasingly dominant constraint for mid-market AI adoption. A 7B parameter fine-tune may cost only \$300 in GPU time but over \$120,000 in data and engineering labor.^28^</p>
+<h2>Market Trajectories and the 2030 Outlook</h2>
+<p>The economic landscape of 2026 is a precursor to a decade of \"industrial intelligence.\" Gartner predicts that by 2030, performing inference on a trillion-parameter LLM will cost providers over 90% less than in 2025.^29^ However, the falling cost of tokens will not necessarily democratize frontier intelligence.</p>
+<h3>The Commoditization Trap and Token Demand</h3>
+<p>The market is currently entering a \"commoditization trap\" where falling unit costs for tokens are offset by disproportionately higher token demand. As AI shifts from simple chatbots to agentic models, token consumption rises 5-30x per task.^29^ By 2030, while token unit costs will be negligible, the total cost of operating an autonomous agentic workforce will likely increase, driving trillions of dollars in infrastructure investment.^20^</p>
+<h3>Sovereign AI and Infrastructure Investment</h3>
+<p>The scale of investment is shifting from corporate to national levels. South Korea has announced a \$230 billion initiative, and Microsoft has committed over \$15 billion to the UAE.^15^ These massive fixed investments in sovereign AI infrastructure are intended to lower the variable costs for local industries and protect data sovereignty, suggesting that the \"fixed\" cost of compute is becoming a matter of national security and economic policy.</p>
+<h2>Conclusions: Navigating the LLM Cost Hierarchy</h2>
+<p>The evolutionary trajectory of LLM compute costs from 2020 to 2026 highlights a fundamental shift from training-constrained research to inference-constrained production. The following conclusions synthesize the current state of AI economics:</p>
+<ol>
+<li>
+<p><strong>The Persistence of Training CapEx:</strong> While unit compute costs are falling, the entry fee for the absolute frontier continues to double every year. Training a model that exceeds previous benchmarks will cost over \$1 billion by 2027, creating a high-moat environment for a few global leaders.^4^</p>
+</li>
+<li>
+<p><strong>The Dominance of Variable Inference Spend:</strong> For any successful production AI, inference costs will dwarf training costs. Managing the variable \"bill\" through architectural efficiency (MoE), quantization (FP8/FP4), and runtime optimization (continuous batching) is now the primary driver of ROI.^1^</p>
+</li>
+<li>
+<p><strong>The Reasoning Token Paradox:</strong> Inference-time scaling (test-time compute) allows models to solve harder problems but significantly increases the variable cost per query. The industry is moving toward a world where simple questions are nearly free, but \"thinking\" answers remain a premium product.^20^</p>
+</li>
+<li>
+<p><strong>Data as a Strategic Compute Sink:</strong> The depletion of real-world data is forcing a shift to synthetic data generation and human-intensive RLHF. These are new \"fixed\" costs that require significant R&amp;D compute and labor, offsetting the savings from hardware efficiency.^8^</p>
+</li>
+<li>
+<p><strong>Hardware Efficiency vs. System Complexity:</strong> Improvements in GPU memory bandwidth (HBM3e) and interconnects (NVLink 5) are more critical for modern inference economics than raw FLOPs. The shift to rack-scale compute is necessary to handle the communication overhead of the sparse architectures that keep variable costs under control.^17^</p>
+</li>
+</ol>
+<p>In summary, the fixed cost of LLMs is the price of <em>accessing</em> the frontier, while the variable cost is the price of <em>using</em> it. As the industry moves toward 2030, the most successful organizations will be those that can effectively amortize their massive fixed investments in research and infrastructure over the rapidly growing volume of highly efficient, low-latency inference tokens.</p>
+<p>To achieve sustainable AI economics, organizations must look beyond raw GPU hours and instead focus on the \"Total Intelligence per Dollar,\" accounting for the full lifecycle of the model from the multi-million dollar \"experimentation tax\" of pre-training to the sequentially generated \"thinking tokens\" of an agentic future.</p>
+<h4>Works cited</h4>
+<ol>
+<li>
+<p>Optimizing Inference Costs: The Complete Guide - Mirantis, accessed April 30, 2026, <a href="https://www.mirantis.com/blog/inference-costs/" target="_blank" rel="noopener noreferrer nofollow">[https://www.mirantis.com/blog/inference-costs/]{.underline}</a></p>
+</li>
+<li>
+<p>AI Inference Cost Economics in 2026: GPU FinOps Playbook \| Spheron Blog, accessed April 30, 2026, <a href="https://www.spheron.network/blog/ai-inference-cost-economics-2026/" target="_blank" rel="noopener noreferrer nofollow">[https://www.spheron.network/blog/ai-inference-cost-economics-2026/]{.underline}</a></p>
+</li>
+<li>
+<p>Trends in Artificial Intelligence \| Epoch AI, accessed April 30, 2026, <a href="https://epoch.ai/trends" target="_blank" rel="noopener noreferrer nofollow">[https://epoch.ai/trends]{.underline}</a></p>
+</li>
+<li>
+<p>(PDF) The rising costs of training frontier AI models - ResearchGate, accessed April 30, 2026, <a href="https://www.researchgate.net/publication/381108862_The_rising_costs_of_training_frontier_AI_models" target="_blank" rel="noopener noreferrer nofollow">[https://www.researchgate.net/publication/381108862_The_rising_costs_of_training_frontier_AI_models]{.underline}</a></p>
+</li>
+<li>
+<p>How much does it cost to train frontier AI models? - Epoch AI, accessed April 30, 2026, <a href="https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models" target="_blank" rel="noopener noreferrer nofollow">[https://epoch.ai/blog/how-much-does-it-cost-to-train-frontier-ai-models]{.underline}</a></p>
+</li>
+<li>
+<p>Inference Cost Explained: How to Reduce LLM &amp; AI Inference Spend, accessed April 30, 2026, <a href="https://www.cloudzero.com/blog/inference-cost/" target="_blank" rel="noopener noreferrer nofollow">[https://www.cloudzero.com/blog/inference-cost/]{.underline}</a></p>
+</li>
+<li>
+<p>Frontier Lab Cost Structure \| LongtermWiki, accessed April 30, 2026, <a href="https://ea-crux-project.vercel.app/knowledge-base/models/frontier-lab-cost-structure/" target="_blank" rel="noopener noreferrer nofollow">[https://ea-crux-project.vercel.app/knowledge-base/models/frontier-lab-cost-structure/]{.underline}</a></p>
+</li>
+<li>
+<p>How Much Does LLM Training Cost? - Galileo AI, accessed April 30, 2026, <a href="https://galileo.ai/blog/llm-model-training-cost" target="_blank" rel="noopener noreferrer nofollow">[https://galileo.ai/blog/llm-model-training-cost]{.underline}</a></p>
+</li>
+<li>
+<p>The rising costs of training frontier AI models, accessed April 30, 2026, <a href="https://arxiv.org/abs/2405.21015" target="_blank" rel="noopener noreferrer nofollow">[https://arxiv.org/abs/2405.21015]{.underline}</a></p>
+</li>
+<li>
+<p>Final training runs account for a minority of R&amp;D compute spending ..., accessed April 30, 2026, <a href="https://epoch.ai/gradient-updates/r-and-d-vs-training-compute" target="_blank" rel="noopener noreferrer nofollow">[https://epoch.ai/gradient-updates/r-and-d-vs-training-compute]{.underline}</a></p>
+</li>
+<li>
+<p>Chinchilla data-optimal scaling laws: In plain English - LifeArchitect.ai, accessed April 30, 2026, <a href="https://lifearchitect.ai/chinchilla/" target="_blank" rel="noopener noreferrer nofollow">[https://lifearchitect.ai/chinchilla/]{.underline}</a></p>
+</li>
+<li>
+<p>How AI Is Changing Web Scraping in 2026 - Kadoa, accessed April 30, 2026, <a href="https://www.kadoa.com/blog/how-ai-is-changing-web-scraping-2026" target="_blank" rel="noopener noreferrer nofollow">[https://www.kadoa.com/blog/how-ai-is-changing-web-scraping-2026]{.underline}</a></p>
+</li>
+<li>
+<p>Why 2026 is the Year Synthetic Data Becomes Non-Negotiable - Towards AI, accessed April 30, 2026, <a href="https://pub.towardsai.net/why-2026-is-the-year-synthetic-data-becomes-non-negotiable-b5a2a84d1b1b" target="_blank" rel="noopener noreferrer nofollow">[https://pub.towardsai.net/why-2026-is-the-year-synthetic-data-becomes-non-negotiable-b5a2a84d1b1b]{.underline}</a></p>
+</li>
+<li>
+<p>Synthetic Data Explosion: How 2026 Reduces Data Costs by 70% - Cogent Infotech, accessed April 30, 2026, <a href="https://cogentinfo.com/resources/synthetic-data-explosion-how-2026-reduces-data-costs-by-70" target="_blank" rel="noopener noreferrer nofollow">[https://cogentinfo.com/resources/synthetic-data-explosion-how-2026-reduces-data-costs-by-70]{.underline}</a></p>
+</li>
+<li>
+<p>Inference Unit Economics: The True Cost Per Million Tokens \| Introl ..., accessed April 30, 2026, <a href="https://introl.com/blog/inference-unit-economics-true-cost-per-million-tokens-guide" target="_blank" rel="noopener noreferrer nofollow">[https://introl.com/blog/inference-unit-economics-true-cost-per-million-tokens-guide]{.underline}</a></p>
+</li>
+<li>
+<p>Simon Willison on llm-pricing, accessed April 30, 2026, <a href="https://simonwillison.net/tags/llm-pricing/" target="_blank" rel="noopener noreferrer nofollow">[https://simonwillison.net/tags/llm-pricing/]{.underline}</a></p>
+</li>
+<li>
+<p>From Dense to Mixture of Experts: The New Economics of AI ..., accessed April 30, 2026, <a href="https://signal65.com/research/ai/from-dense-to-mixture-of-experts-the-new-economics-of-ai-inference/" target="_blank" rel="noopener noreferrer nofollow">[https://signal65.com/research/ai/from-dense-to-mixture-of-experts-the-new-economics-of-ai-inference/]{.underline}</a></p>
+</li>
+<li>
+<p>Inside the Architecture of Every Frontier Model: What 22 Open-Weight LLMs Reveal \| by Yugank .Aman \| Apr, 2026 \| Medium, accessed April 30, 2026, <a href="https://medium.com/@yugank.aman/inside-the-architecture-of-every-frontier-model-what-22-open-weight-llms-reveal-b054ae601980" target="_blank" rel="noopener noreferrer nofollow">[https://medium.com/@yugank.aman/inside-the-architecture-of-every-frontier-model-what-22-open-weight-llms-reveal-b054ae601980]{.underline}</a></p>
+</li>
+<li>
+<p>LLM Server GPU Comparison: H100, A100, B200 and RTX A6000 Picks - is*hosting Blog, accessed April 30, 2026, <a href="https://blog.ishosting.com/en/best-gpus-for-large-language-models-hosting" target="_blank" rel="noopener noreferrer nofollow">[https://blog.ishosting.com/en/best-gpus-for-large-language-models-hosting]{.underline}</a></p>
+</li>
+<li>
+<p>Inference-Time Scaling: The New Training Frontier for AI Reasoning - Introl, accessed April 30, 2026, <a href="https://introl.com/blog/inference-time-scaling-research-reasoning-models-december-2025" target="_blank" rel="noopener noreferrer nofollow">[https://introl.com/blog/inference-time-scaling-research-reasoning-models-december-2025]{.underline}</a></p>
+</li>
+<li>
+<p>Trading off compute in training and inference \| Epoch AI, accessed April 30, 2026, <a href="https://epoch.ai/blog/trading-off-compute-in-training-and-inference" target="_blank" rel="noopener noreferrer nofollow">[https://epoch.ai/blog/trading-off-compute-in-training-and-inference]{.underline}</a></p>
+</li>
+<li>
+<p>More compute for AI, not less \| Deloitte Insights, accessed April 30, 2026, <a href="https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/compute-power-ai.html" target="_blank" rel="noopener noreferrer nofollow">[https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/compute-power-ai.html]{.underline}</a></p>
+</li>
+<li>
+<p>NVIDIA AI GPU Prices: H100 (\$27K-\$40K) &amp; H200 (\$315K/8-GPU) Cost Guide, accessed April 30, 2026, <a href="https://intuitionlabs.ai/articles/nvidia-ai-gpu-pricing-guide" target="_blank" rel="noopener noreferrer nofollow">[https://intuitionlabs.ai/articles/nvidia-ai-gpu-pricing-guide]{.underline}</a></p>
+</li>
+<li>
+<p>B100 vs H100: Best GPU for LLMs, vision models, and scalable training \| Blog --- Northflank, accessed April 30, 2026, <a href="https://northflank.com/blog/b100-vs-h100" target="_blank" rel="noopener noreferrer nofollow">[https://northflank.com/blog/b100-vs-h100]{.underline}</a></p>
+</li>
+<li>
+<p>NVIDIA Blackwell B200 vs H100: Real-World Benchmarks, Costs, and Why We Self-Host, accessed April 30, 2026, <a href="https://www.lightly.ai/blog/nvidia-b200-vs-h100" target="_blank" rel="noopener noreferrer nofollow">[https://www.lightly.ai/blog/nvidia-b200-vs-h100]{.underline}</a></p>
+</li>
+<li>
+<p>Frontier AI Training Costs 2026: GPT-4 \$100M, Llama \$25M ..., accessed April 30, 2026, <a href="https://localaimaster.com/blog/ai-model-training-costs-2025-analysis" target="_blank" rel="noopener noreferrer nofollow">[https://localaimaster.com/blog/ai-model-training-costs-2025-analysis]{.underline}</a></p>
+</li>
+<li>
+<p>AI Development Cost in 2026: Real Pricing from \$5K to \$500K+ \| - ProductCrafters, accessed April 30, 2026, <a href="https://productcrafters.io/blog/ai-development-cost-2026/" target="_blank" rel="noopener noreferrer nofollow">[https://productcrafters.io/blog/ai-development-cost-2026/]{.underline}</a></p>
+</li>
+<li>
+<p>Custom LLM Development Cost: What to Budget in 2026 \| TechAhead, accessed April 30, 2026, <a href="https://www.techaheadcorp.com/blog/custom-llm-development-cost/" target="_blank" rel="noopener noreferrer nofollow">[https://www.techaheadcorp.com/blog/custom-llm-development-cost/]{.underline}</a></p>
+</li>
+<li>
+<p>Gartner Predicts That by 2030, Performing Inference on an LLM With 1 Trillion Parameters Will Cost GenAI Providers Over 90% Less Than in 2025, accessed April 30, 2026, <a href="https://www.gartner.com/en/newsroom/press-releases/2026-03-25-gartner-predicts-that-by-2030-performing-inference-on-an-llm-with-1-trillion-parameters-will-cost-genai-providers-over-90-percent-less-than-in-2025" target="_blank" rel="noopener noreferrer nofollow">[https://www.gartner.com/en/newsroom/press-releases/2026-03-25-gartner-predicts-that-by-2030-performing-inference-on-an-llm-with-1-trillion-parameters-will-cost-genai-providers-over-90-percent-less-than-in-2025]{.underline}</a></p>
+</li>
+</ol></div>
+      
+
+      <dl class="mt-6 grid grid-cols-[88px_1fr] gap-x-4 gap-y-3 border-t border-line-soft pt-4 text-[13px]">
+        
+        <dt class="text-faint">Themes</dt>
+        <dd class="flex flex-wrap gap-1.5"><span class="badge">AI/DC</span><span class="badge">Supply chain</span><span class="badge">Macro</span><span class="badge">Commodities / energy</span><span class="badge">Company / security</span></dd>
+        
+        <dt class="text-faint">Entities</dt>
+        <dd class="flex flex-wrap gap-1.5">
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">NVIDIA</span>
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">Google</span>
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">OpenAI</span>
+          <span class="rounded bg-surface-2 px-1.5 py-0.5 font-mono text-[12px] text-ink">Anthropic</span>
+          
+        </dd>
+      </dl>
+    </div>
+
+    <footer class="flex items-start gap-2 border-t border-line bg-surface-2 px-6 py-3 text-[12px] text-muted">
+      <svg class="mt-px size-3.5 shrink-0 text-faint" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>
+</svg>
+      
+      <span>The note as clipped from Unknown on <span class="num">2026-05-17</span>; its frontmatter is not shown. The note names no original link.</span>
+      
+    </footer>
+  </div>
+</dialog>
