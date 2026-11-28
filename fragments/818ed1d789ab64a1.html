@@ -1,0 +1,177 @@
+<input type="hidden" name="sort" value="date" form="t-guidance_revisions-form">
+<input type="hidden" name="direction" value="asc" form="t-guidance_revisions-form"><div class="scroll-cue" data-scroll-cue>
+<div class="max-h-[640px] overflow-auto" data-scroll-x tabindex="0" role="region" aria-label="Revision Detail, scrollable"><table class="w-full  border-collapse dt-stack  ">
+  
+  <thead><tr>
+    
+    
+    
+    <th class="th left-0 z-[12]    pl-5 "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions"
+              hx-vals='{"sort": "company", "direction": "asc", "page": "1"}'>
+        Company<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions"
+              hx-vals='{"sort": "fy", "direction": "asc", "page": "1"}'>
+        Fiscal Year<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="ascending">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink text-ink text-left"
+              hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions"
+              hx-vals='{"sort": "date", "direction": "desc", "page": "1"}'>
+        Date<span class="w-2 text-[10px] ">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions"
+              hx-vals='{"sort": "type", "direction": "asc", "page": "1"}'>
+        Type<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions"
+              hx-vals='{"sort": "basis", "direction": "asc", "page": "1"}'>
+        Basis<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th    text-right  "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-right"
+              hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions"
+              hx-vals='{"sort": "guidance", "direction": "asc", "page": "1"}'>
+        Guidance<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions"
+              hx-vals='{"sort": "range", "direction": "asc", "page": "1"}'>
+        Range<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions"
+              hx-vals='{"sort": "delta_fmt", "direction": "asc", "page": "1"}'>
+        vs Prior<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      "
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions"
+              hx-vals='{"sort": "source", "direction": "asc", "page": "1"}'>
+        Source<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+    
+    
+    <th class="th      pr-5"
+        aria-sort="none">
+      <button type="button" class="inline-flex items-center gap-1 hover:text-ink  text-left"
+              hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions"
+              hx-vals='{"sort": "notes", "direction": "asc", "page": "1"}'>
+        Notes<span class="w-2 text-[10px] opacity-0">↑</span>
+      </button>
+    </th>
+    
+  </tr></thead>
+
+  
+
+  
+  <tbody>
+    <tr data-row class="transition-colors hover:bg-surface-2">
+    
+    
+    <td data-label="Company" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px] pl-5  whitespace-nowrap sticky left-0 z-[1] bg-surface shadow-[1px_0_0_var(--line-soft)] text-ink">CoreWeave</td>
+    
+    
+    <td data-label="Fiscal Year" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">CY2026</td>
+    
+    
+    <td data-label="Date" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">2026-11-10</td>
+    
+    
+    <td data-label="Type" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Mgmt guidance</td>
+    
+    
+    <td data-label="Basis" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Unspecified</td>
+    
+    
+    <td data-label="Guidance" data-kind="num" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap num text-right text-ink">$38.0B</td>
+    
+    
+    <td data-label="Range" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">$37–39B</td>
+    
+    
+    <td data-label="vs Prior" data-kind="mono" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap font-mono text-[12px] font-medium text-ink">+$1.0B</td>
+    
+    
+    <td data-label="Source" data-kind="text" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]   whitespace-nowrap text-ink">Q3 CY2026 earnings release (8-K Ex 99.1)</td>
+    
+    
+    <td data-label="Notes" data-kind="long" class="border-b border-line-soft px-3 align-top py-2.5 text-[13px]  pr-5 leading-relaxed text-muted"><div class="dt-long w-[400px]">Raised low end to $37-39B from $35-39B in the Q3 CY2026 earnings release (8-K Ex 99.1, 2026-11-10): &#34;We now expect full year 2026 capital expenditures of $37 billion to $39 billion, raising the low end of our prior guidance range of $35 billion to $39 billion.&#34; Reason given: expectation to deploy infrastructure and deliver it to customers sooner than planned. Prior $35-39B set 2026-08-11 (from $31-35B, initial $30-35B). Src: https://www.sec.gov/Archives/edgar/data/1769628/000176962826000461/coreweave3q26earningspress.htm</div></td>
+    
+  </tr>
+    
+  </tbody>
+  
+</table>
+</div>
+</div>
+
+<div class="flex flex-wrap items-center justify-between gap-2 border-t border-line px-5 py-2.5 text-[12px] text-faint">
+  <span class="num">51 observations · page 3 of 3<span data-scroll-hint hidden> · <span class="text-muted">scroll sideways for more columns →</span></span></span>
+  
+  <div class="flex items-center gap-1">
+    <button type="button" class="btn btn-icon h-7 w-7 disabled:opacity-40" aria-label="Previous page" 
+            hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions" hx-vals='{"page": "2"}'>
+      <span class="rotate-180"><svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/>
+</svg></span></button>
+    <button type="button" class="btn btn-icon h-7 w-7 disabled:opacity-40" aria-label="Next page" disabled
+            hx-get="/partials/t/guidance_revisions" hx-include="#t-guidance_revisions-form, #gr-filters" hx-target="#t-guidance_revisions" hx-vals='{"page": "4"}'>
+      <svg class="size-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/>
+</svg></button>
+  </div>
+  
+</div>
